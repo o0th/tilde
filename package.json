@@ -1,0 +1,32 @@
+{
+  "name": "tilde",
+  "version": "0.0.0",
+  "description": "svg for github readme",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon -e js,svg index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/o0th/tilde.git"
+  },
+  "author": "Sabato Luca Guadagno <o0th@pm.me>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/o0th/tilde/issues"
+  },
+  "homepage": "https://github.com/o0th/tilde#readme",
+  "devDependencies": {
+    "eslint": "^7.28.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.23.4",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.1.0",
+    "nodemon": "^2.0.7"
+  },
+  "dependencies": {
+    "koa": "^2.13.1"
+  }
+}
