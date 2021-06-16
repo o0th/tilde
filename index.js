@@ -12,7 +12,7 @@ const app = new Koa()
 const router = new Router()
 
 const waka = 'https://wakatime.com/api/v1'
-const key = process.env.WAKA_KEY
+const key = process.env.WAKATIME_KEY
 
 const css = fs.readFileSync('./styles.css')
 
@@ -35,11 +35,11 @@ const createSVG = (d3, width, height) => {
     .attr('height', height)
 }
 
-const createHeader = (svg, text) => {
+const createHeader = (svg, text, x, y) => {
   svg.append('text')
     .attr('class', 'header')
-    .attr('x', 25)
-    .attr('y', 43)
+    .attr('x', x)
+    .attr('y', y)
     .text(text)
 }
 
@@ -108,7 +108,7 @@ router.get('/wakatime/:username/stats/editors/:range', async (ctx) => {
   const stats = await axios.get(`${waka}/users/${username}/stats/${range}?api_key=${key}`)
 
   const svg = createSVG(d3, card.width, card.height)
-  createHeader(svg, 'Editors')
+  createHeader(svg, 'Editors', 25, 43)
   createStats(svg, stats.data.data.editors)
 
   ctx.type = 'image/svg+xml; charset=utf-8'
@@ -123,7 +123,7 @@ router.get('/wakatime/:username/stats/languages/:range', async (ctx) => {
   const stats = await axios.get(`${waka}/users/${username}/stats/${range}?api_key=${key}`)
 
   const svg = createSVG(d3, card.width, card.height)
-  createHeader(svg, 'Languages')
+  createHeader(svg, 'Languages', 25, 43)
   createStats(svg, stats.data.data.languages)
 
   ctx.type = 'image/svg+xml; charset=utf-8'
