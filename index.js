@@ -39,8 +39,7 @@ const createHeader = (svg, text, x, y) => {
 }
 
 const createStats = (svg, stats, width, height, padding) => {
-  svg
-    .append('mask')
+  svg.append('mask')
     .attr('id', 'stats')
     .append('rect')
     .attr('x', padding)
@@ -52,8 +51,7 @@ const createStats = (svg, stats, width, height, padding) => {
 
   stats.reduce((accumulator, stat, index) => {
     const fill = '#' + ((1 << 24) * Math.random() | 0).toString(16)
-    svg
-      .append('rect')
+    svg.append('rect')
       .attr('mask', 'url(#stats)')
       .attr('class', stat.name)
       .attr('x', accumulator)
@@ -65,23 +63,20 @@ const createStats = (svg, stats, width, height, padding) => {
     const x = ((index + 1) % 2) ? 0 : 225
     const y = ((index + 1) % 2) ? (index + 1) * 12 : index * 12
 
-    const child = svg
-      .append('g')
+    const child = svg.append('g')
       .append('svg')
       .attr('x', padding)
       .attr('y', 73)
       .attr('transform', `translate(${x},${y})`)
 
-    child
-      .append('circle')
+    child.append('circle')
       .attr('class', stat.name)
       .attr('cx', 5)
       .attr('cy', 5)
       .attr('r', 5)
       .attr('fill', fill)
 
-    child
-      .append('text')
+    child.append('text')
       .attr('class', 'item')
       .attr('x', 20)
       .attr('y', 8.75)
@@ -102,9 +97,9 @@ router.get('/wakatime/:username/stats/editors/:range/:size', async (ctx) => {
 
   const stats = await axios.get(`${waka}/users/${username}/stats/${range}?api_key=${key}`)
 
-  const svg = createSVG(d3, Math.round(width / size), 200)
+  const svg = createSVG(d3, size, 200)
   createHeader(svg, 'Editors', 25, 43)
-  createStats(svg, stats.data.data.editors, Math.round(width / size - 50), 8, 25)
+  createStats(svg, stats.data.data.editors, size - 50, 8, 25)
 
   ctx.type = 'image/svg+xml; charset=utf-8'
   ctx.body = Buffer.from(d3.svgString())
@@ -119,9 +114,9 @@ router.get('/wakatime/:username/stats/languages/:range/:size', async (ctx) => {
 
   const stats = await axios.get(`${waka}/users/${username}/stats/${range}?api_key=${key}`)
 
-  const svg = createSVG(d3, Math.round(width / size), 200)
+  const svg = createSVG(d3, size, 200)
   createHeader(svg, 'Languages', 25, 43)
-  createStats(svg, stats.data.data.languages, Math.round(width / size - 50), 8, 25)
+  createStats(svg, stats.data.data.languages, size - 50, 8, 25)
 
   ctx.type = 'image/svg+xml; charset=utf-8'
   ctx.body = Buffer.from(d3.svgString())
@@ -136,9 +131,9 @@ router.get('/wakatime/:username/stats/oss/:range/:size', async (ctx) => {
 
   const stats = await axios.get(`${waka}/users/${username}/stats/${range}?api_key=${key}`)
 
-  const svg = createSVG(d3, Math.round(width / size), 200)
+  const svg = createSVG(d3, size, 200)
   createHeader(svg, 'Operating Systems', 25, 43)
-  createStats(svg, stats.data.data.operating_systems, Math.round(width / size - 50), 8, 25)
+  createStats(svg, stats.data.data.operating_systems, size - 50, 8, 25)
 
   ctx.type = 'image/svg+xml; charset=utf-8'
   ctx.body = Buffer.from(d3.svgString())
