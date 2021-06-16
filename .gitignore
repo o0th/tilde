@@ -1,2 +1,18 @@
+#
+# node
+#
+
 node_modules
+
+#
+# local env
+#
+
 .env
+
+#
+# terraform
+#
+
+.terraform
+
