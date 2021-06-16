@@ -100,11 +100,12 @@ const createStats = (svg, stats) => {
   return svg
 }
 
-router.get('/wakatime/:username/stats/editors', async (ctx) => {
+router.get('/wakatime/:username/stats/editors/:range', async (ctx) => {
   const d3 = new D3({ styles: css.toString() })
 
+  const range = ctx.params.range
   const username = ctx.params.username
-  const stats = await axios.get(`${waka}/users/${username}/stats/last_7_days?api_key=${key}`)
+  const stats = await axios.get(`${waka}/users/${username}/stats/${range}?api_key=${key}`)
 
   const svg = createSVG(d3, card.width, card.height)
   createHeader(svg, 'Editors')
@@ -114,15 +115,31 @@ router.get('/wakatime/:username/stats/editors', async (ctx) => {
   ctx.body = Buffer.from(d3.svgString())
 })
 
-router.get('/wakatime/:username/stats/languages', async (ctx) => {
+router.get('/wakatime/:username/stats/languages/:range', async (ctx) => {
   const d3 = new D3({ styles: css.toString() })
 
+  const range = ctx.params.range
   const username = ctx.params.username
-  const stats = await axios.get(`${waka}/users/${username}/stats/last_7_days?api_key=${key}`)
+  const stats = await axios.get(`${waka}/users/${username}/stats/${range}?api_key=${key}`)
 
   const svg = createSVG(d3, card.width, card.height)
   createHeader(svg, 'Languages')
   createStats(svg, stats.data.data.languages)
+
+  ctx.type = 'image/svg+xml; charset=utf-8'
+  ctx.body = Buffer.from(d3.svgString())
+})
+
+router.get('/wakatime/:username/stats/oss/:range', async (ctx) => {
+  const d3 = new D3({ styles: css.toString() })
+
+  const range = ctx.params.range
+  const username = ctx.params.username
+  const stats = await axios.get(`${waka}/users/${username}/stats/${range}?api_key=${key}`)
+
+  const svg = createSVG(d3, card.width, card.height)
+  createHeader(svg, 'Operating Systems')
+  createStats(svg, stats.data.data.operating_systems)
 
   ctx.type = 'image/svg+xml; charset=utf-8'
   ctx.body = Buffer.from(d3.svgString())
