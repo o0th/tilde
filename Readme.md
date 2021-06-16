@@ -15,27 +15,27 @@
 
 ### wakatime languages
 
-[![Editors](https://tilde-yfho7.ondigitalocean.app/wakatime/o0th/stats/languages/last_7_days)](https://github.com/o0th/tilde)
-
 ```markdown
-[![Editors](https://tilde-yfho7.ondigitalocean.app/wakatime/o0th/stats/languages/last_7_days)](https://github.com/o0th/tilde)
+[![Languages](https://tilde-yfho7.ondigitalocean.app/wakatime/o0th/stats/languages/last_7_days)](https://github.com/o0th/tilde)
 ```
+
+[![Editors](https://tilde-yfho7.ondigitalocean.app/wakatime/o0th/stats/languages/last_7_days)](https://github.com/o0th/tilde)
 
 ### wakatime editors
 
-[![Editors](https://tilde-yfho7.ondigitalocean.app/wakatime/o0th/stats/editors/last_7_days)](https://github.com/o0th/tilde)
-
 ```markdown
 [![Editors](https://tilde-yfho7.ondigitalocean.app/wakatime/o0th/stats/editors/last_7_days)](https://github.com/o0th/tilde)
 ```
+
+[![Editors](https://tilde-yfho7.ondigitalocean.app/wakatime/o0th/stats/editors/last_7_days)](https://github.com/o0th/tilde)
 
 ### wakatime oss
 
-[![Oss](https://tilde-yfho7.ondigitalocean.app/wakatime/o0th/stats/oss/last_7_days)](https://github.com/o0th/tilde)
-
 ```markdown
 [![Oss](https://tilde-yfho7.ondigitalocean.app/wakatime/o0th/stats/oss/last_7_days)](https://github.com/o0th/tilde)
 ```
+
+[![Oss](https://tilde-yfho7.ondigitalocean.app/wakatime/o0th/stats/oss/last_7_days)](https://github.com/o0th/tilde)
 
 ### Contribute
 
