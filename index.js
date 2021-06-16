@@ -1,5 +1,7 @@
 require('dotenv').config()
 
+const fs = require('fs')
+
 const Koa = require('koa')
 const Router = require('@koa/router')
 
@@ -8,7 +10,9 @@ const D3 = require('d3-node')
 
 const app = new Koa()
 const router = new Router()
-const d3 = new D3({ styles: '.item { font: 400 10px Sans-Serif; fill: #8b949e  } .header { font: 600 18px Sans-Serif; fill: #2a84ea }' })
+
+const css = fs.readFileSync('./styles.css')
+const d3 = new D3({ styles: css.toString() })
 
 const waka = 'https://wakatime.com/api/v1'
 const key = process.env.WAKA_KEY
@@ -53,13 +57,13 @@ router.get('/waka/:username/editors', async (ctx) => {
     .attr('fill', 'white')
 
   stats.data.data.editors.reduce((accumulator, editor, index) => {
-    console.log(editor)
     const fill = '#' + ((1 << 24) * Math.random() | 0).toString(16)
     const width = Math.round(450 / 100 * editor.percent)
 
     svg
       .append('rect')
       .attr('mask', 'url(#editors)')
+      .attr('class', editor.name)
       .attr('x', accumulator)
       .attr('y', 58)
       .attr('width', width)
@@ -78,6 +82,7 @@ router.get('/waka/:username/editors', async (ctx) => {
 
     child
       .append('circle')
+      .attr('class', editor.name)
       .attr('cx', 5)
       .attr('cy', 5)
       .attr('r', 5)
