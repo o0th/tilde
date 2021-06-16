@@ -11,11 +11,10 @@ const D3 = require('d3-node')
 const app = new Koa()
 const router = new Router()
 
-const css = fs.readFileSync('./styles.css')
-const d3 = new D3({ styles: css.toString() })
-
 const waka = 'https://wakatime.com/api/v1'
 const key = process.env.WAKA_KEY
+
+const css = fs.readFileSync('./styles.css')
 
 const card = {
   width: 500,
@@ -28,26 +27,26 @@ const bar = {
   height: 8
 }
 
-router.get('/waka/:username/editors', async (ctx) => {
-  const username = ctx.params.username
-  const stats = await axios.get(`${waka}/users/${username}/stats/last_7_days?api_key=${key}`)
-
-  const svg = d3.createSVG()
+const createSVG = (d3, width, height) => {
+  return d3.createSVG()
     .attr('xmlns', 'http://www.w3.org/2000/svg')
-    .attr('viewBox', `0 0 ${card.width} ${card.height}`)
-    .attr('width', card.width)
-    .attr('height', card.height)
+    .attr('viewBox', `0 0 ${width} ${height}`)
+    .attr('width', width)
+    .attr('height', height)
+}
 
-  svg
-    .append('text')
+const createHeader = (svg, text) => {
+  svg.append('text')
     .attr('class', 'header')
     .attr('x', 25)
     .attr('y', 43)
-    .text('Editors')
+    .text(text)
+}
 
+const createStats = (svg, stats) => {
   svg
     .append('mask')
-    .attr('id', 'editors')
+    .attr('id', 'stats')
     .append('rect')
     .attr('x', card.padding)
     .attr('y', 58)
@@ -56,14 +55,14 @@ router.get('/waka/:username/editors', async (ctx) => {
     .attr('rx', 5)
     .attr('fill', 'white')
 
-  stats.data.data.editors.reduce((accumulator, editor, index) => {
+  stats.reduce((accumulator, stat, index) => {
     const fill = '#' + ((1 << 24) * Math.random() | 0).toString(16)
-    const width = Math.round(450 / 100 * editor.percent)
+    const width = Math.round(450 / 100 * stat.percent)
 
     svg
       .append('rect')
-      .attr('mask', 'url(#editors)')
-      .attr('class', editor.name)
+      .attr('mask', 'url(#stats)')
+      .attr('class', stat.name)
       .attr('x', accumulator)
       .attr('y', 58)
       .attr('width', width)
@@ -82,7 +81,7 @@ router.get('/waka/:username/editors', async (ctx) => {
 
     child
       .append('circle')
-      .attr('class', editor.name)
+      .attr('class', stat.name)
       .attr('cx', 5)
       .attr('cy', 5)
       .attr('r', 5)
@@ -93,10 +92,37 @@ router.get('/waka/:username/editors', async (ctx) => {
       .attr('class', 'item')
       .attr('x', 20)
       .attr('y', 8.75)
-      .text(`${editor.name} ${editor.text} (${editor.percent}%)`)
+      .text(`${stat.name} ${stat.text} (${stat.percent}%)`)
 
-    return Math.round((450 / 100 * editor.percent) + accumulator)
+    return Math.round((450 / 100 * stat.percent) + accumulator)
   }, card.padding)
+
+  return svg
+}
+
+router.get('/wakatime/:username/stats/editors', async (ctx) => {
+  const d3 = new D3({ styles: css.toString() })
+
+  const username = ctx.params.username
+  const stats = await axios.get(`${waka}/users/${username}/stats/last_7_days?api_key=${key}`)
+
+  const svg = createSVG(d3, card.width, card.height)
+  createHeader(svg, 'Editors')
+  createStats(svg, stats.data.data.editors)
+
+  ctx.type = 'image/svg+xml; charset=utf-8'
+  ctx.body = Buffer.from(d3.svgString())
+})
+
+router.get('/wakatime/:username/stats/languages', async (ctx) => {
+  const d3 = new D3({ styles: css.toString() })
+
+  const username = ctx.params.username
+  const stats = await axios.get(`${waka}/users/${username}/stats/last_7_days?api_key=${key}`)
+
+  const svg = createSVG(d3, card.width, card.height)
+  createHeader(svg, 'Languages')
+  createStats(svg, stats.data.data.languages)
 
   ctx.type = 'image/svg+xml; charset=utf-8'
   ctx.body = Buffer.from(d3.svgString())
