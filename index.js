@@ -138,7 +138,7 @@ router.get('/wakatime/:username/stats/oss/:range', async (ctx) => {
   const stats = await axios.get(`${waka}/users/${username}/stats/${range}?api_key=${key}`)
 
   const svg = createSVG(d3, card.width, card.height)
-  createHeader(svg, 'Operating Systems')
+  createHeader(svg, 'Operating Systems', 25, 43)
   createStats(svg, stats.data.data.operating_systems)
 
   ctx.type = 'image/svg+xml; charset=utf-8'
