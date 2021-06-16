@@ -12,46 +12,37 @@
   </a>
 </p>
 
+### Sizing
+
+| Readme     | 1 Column  | 2 Columns | 3 Columns |
+| ---------- | :-------: | :-------: | :-------: |
+| Profile    | 854       | 419       | 282       |
+| Repository | 838       | 415       | 271       |
+
 
 ### wakatime languages
 
 ```markdown
-[![Languages](https://tilde-yfho7.ondigitalocean.app/wakatime/o0th/stats/languages/last_7_days/1)](https://github.com/o0th/tilde)
+[![Languages](https://tilde-yfho7.ondigitalocean.app/wakatime/o0th/stats/languages/last_7_days/838)](https://github.com/o0th/tilde)
 ```
 
-[![Editors](https://tilde-yfho7.ondigitalocean.app/wakatime/o0th/stats/languages/last_7_days/1)](https://github.com/o0th/tilde)
-
-```markdown
-[![Languages](https://tilde-yfho7.ondigitalocean.app/wakatime/o0th/stats/languages/last_7_days/2)](https://github.com/o0th/tilde)
-```
-
-[![Editors](https://tilde-yfho7.ondigitalocean.app/wakatime/o0th/stats/languages/last_7_days/2)](https://github.com/o0th/tilde)
-[![Editors](https://tilde-yfho7.ondigitalocean.app/wakatime/o0th/stats/languages/last_7_days/2)](https://github.com/o0th/tilde)
-
-```markdown
-[![Languages](https://tilde-yfho7.ondigitalocean.app/wakatime/o0th/stats/languages/last_7_days/3)](https://github.com/o0th/tilde)
-```
-
-[![Editors](https://tilde-yfho7.ondigitalocean.app/wakatime/o0th/stats/languages/last_7_days/3)](https://github.com/o0th/tilde)
-[![Editors](https://tilde-yfho7.ondigitalocean.app/wakatime/o0th/stats/languages/last_7_days/3)](https://github.com/o0th/tilde)
-[![Editors](https://tilde-yfho7.ondigitalocean.app/wakatime/o0th/stats/languages/last_7_days/3)](https://github.com/o0th/tilde)
-
+[![Editors](https://tilde-yfho7.ondigitalocean.app/wakatime/o0th/stats/languages/last_7_days/838)](https://github.com/o0th/tilde)
 
 ### wakatime editors
 
 ```markdown
-[![Editors](https://tilde-yfho7.ondigitalocean.app/wakatime/o0th/stats/editors/last_7_days)](https://github.com/o0th/tilde)
+[![Editors](https://tilde-yfho7.ondigitalocean.app/wakatime/o0th/stats/editors/last_7_days/838)](https://github.com/o0th/tilde)
 ```
 
-[![Editors](https://tilde-yfho7.ondigitalocean.app/wakatime/o0th/stats/editors/last_7_days)](https://github.com/o0th/tilde)
+[![Editors](https://tilde-yfho7.ondigitalocean.app/wakatime/o0th/stats/editors/last_7_days/838)](https://github.com/o0th/tilde)
 
 ### wakatime oss
 
 ```markdown
-[![Oss](https://tilde-yfho7.ondigitalocean.app/wakatime/o0th/stats/oss/last_7_days)](https://github.com/o0th/tilde)
+[![Oss](https://tilde-yfho7.ondigitalocean.app/wakatime/o0th/stats/oss/last_7_days/838)](https://github.com/o0th/tilde)
 ```
 
-[![Oss](https://tilde-yfho7.ondigitalocean.app/wakatime/o0th/stats/oss/last_7_days)](https://github.com/o0th/tilde)
+[![Oss](https://tilde-yfho7.ondigitalocean.app/wakatime/o0th/stats/oss/last_7_days/838)](https://github.com/o0th/tilde)
 
 ### Contribute
 
