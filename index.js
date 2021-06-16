@@ -17,6 +17,7 @@ const router = new Router()
 /** Global variables */
 const waka = 'https://wakatime.com/api/v1'
 const key = process.env.WAKATIME_KEY
+const width = 850
 
 /** Global files */
 const css = fs.readFileSync('./styles.css')
@@ -101,9 +102,9 @@ router.get('/wakatime/:username/stats/editors/:range/:size', async (ctx) => {
 
   const stats = await axios.get(`${waka}/users/${username}/stats/${range}?api_key=${key}`)
 
-  const svg = createSVG(d3, Math.round(854 / size), 200)
+  const svg = createSVG(d3, Math.round(width / size), 200)
   createHeader(svg, 'Editors', 25, 43)
-  createStats(svg, stats.data.data.editors, Math.round(854 / size - 50), 8, 25)
+  createStats(svg, stats.data.data.editors, Math.round(width / size - 50), 8, 25)
 
   ctx.type = 'image/svg+xml; charset=utf-8'
   ctx.body = Buffer.from(d3.svgString())
@@ -118,9 +119,9 @@ router.get('/wakatime/:username/stats/languages/:range/:size', async (ctx) => {
 
   const stats = await axios.get(`${waka}/users/${username}/stats/${range}?api_key=${key}`)
 
-  const svg = createSVG(d3, Math.round(854 / size), 200)
+  const svg = createSVG(d3, Math.round(width / size), 200)
   createHeader(svg, 'Languages', 25, 43)
-  createStats(svg, stats.data.data.languages, Math.round(854 / size - 50), 8, 25)
+  createStats(svg, stats.data.data.languages, Math.round(width / size - 50), 8, 25)
 
   ctx.type = 'image/svg+xml; charset=utf-8'
   ctx.body = Buffer.from(d3.svgString())
@@ -135,9 +136,9 @@ router.get('/wakatime/:username/stats/oss/:range/:size', async (ctx) => {
 
   const stats = await axios.get(`${waka}/users/${username}/stats/${range}?api_key=${key}`)
 
-  const svg = createSVG(d3, 854, 200)
+  const svg = createSVG(d3, Math.round(width / size), 200)
   createHeader(svg, 'Operating Systems', 25, 43)
-  createStats(svg, stats.data.data.operating_systems, Math.round(854 / size - 50), 8, 25)
+  createStats(svg, stats.data.data.operating_systems, Math.round(width / size - 50), 8, 25)
 
   ctx.type = 'image/svg+xml; charset=utf-8'
   ctx.body = Buffer.from(d3.svgString())

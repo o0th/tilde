@@ -34,6 +34,7 @@
 
 [![Editors](https://tilde-yfho7.ondigitalocean.app/wakatime/o0th/stats/languages/last_7_days/3)](https://github.com/o0th/tilde)
 [![Editors](https://tilde-yfho7.ondigitalocean.app/wakatime/o0th/stats/languages/last_7_days/3)](https://github.com/o0th/tilde)
+[![Editors](https://tilde-yfho7.ondigitalocean.app/wakatime/o0th/stats/languages/last_7_days/3)](https://github.com/o0th/tilde)
 
 
 ### wakatime editors
