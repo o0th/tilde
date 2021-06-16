@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "dev": "nodemon -e js,svg index.js",
+    "dev": "nodemon -e js,css index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
