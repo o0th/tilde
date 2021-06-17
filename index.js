@@ -1,25 +1,22 @@
-/** Dotenv: load .env file and environment variables */
 require('dotenv').config()
 
-/** System dependencies */
 const fs = require('fs')
 
-/** Project dependencies */
 const Koa = require('koa')
 const Router = require('@koa/router')
 const D3 = require('d3-node')
 const axios = require('axios')
 
-/** Global constructors */
 const app = new Koa()
 const router = new Router()
 
-/** Global variables */
 const waka = 'https://wakatime.com/api/v1'
 const key = process.env.WAKATIME_KEY
 
-/** Global files */
 const css = fs.readFileSync('./styles.css')
+const editors = require('./assets/editors.json')
+const languages = require('./assets/languages.json')
+const oss = require('./assets/oss.json')
 
 const createSVG = (d3, width, height) => {
   return d3.createSVG()
@@ -37,7 +34,7 @@ const createHeader = (svg, text, x, y) => {
     .text(text)
 }
 
-const createStats = (svg, stats, width, height, padding, columns) => {
+const createStats = (svg, stats, width, height, padding, columns, colors = {}) => {
   svg.append('mask')
     .attr('id', 'stats')
     .append('rect')
@@ -49,7 +46,7 @@ const createStats = (svg, stats, width, height, padding, columns) => {
     .attr('fill', 'white')
 
   stats.reduce((accumulator, stat, index) => {
-    const fill = '#' + ((1 << 24) * Math.random() | 0).toString(16)
+    const fill = colors[stat.name]?.color || colors.Other?.color || '#' + ((1 << 24) * Math.random() | 0).toString(16)
     svg.append('rect')
       .attr('mask', 'url(#stats)')
       .attr('class', stat.name)
@@ -122,7 +119,7 @@ router.get('/wakatime/:username/stats/editors/:range/:size/:columns', async (ctx
 
   const svg = createSVG(d3, size, 200)
   createHeader(svg, 'Editors', 25, 43)
-  createStats(svg, stats.data.data.editors, size - 50, 8, 25, columns)
+  createStats(svg, stats.data.data.editors, size - 50, 8, 25, columns, editors)
 
   ctx.type = 'image/svg+xml; charset=utf-8'
   ctx.body = Buffer.from(d3.svgString())
@@ -140,7 +137,7 @@ router.get('/wakatime/:username/stats/languages/:range/:size/:columns', async (c
 
   const svg = createSVG(d3, size, 200)
   createHeader(svg, 'Languages', 25, 43)
-  createStats(svg, stats.data.data.languages, size - 50, 8, 25, columns)
+  createStats(svg, stats.data.data.languages, size - 50, 8, 25, columns, languages)
 
   ctx.type = 'image/svg+xml; charset=utf-8'
   ctx.body = Buffer.from(d3.svgString())
@@ -158,7 +155,7 @@ router.get('/wakatime/:username/stats/oss/:range/:size/:columns', async (ctx) =>
 
   const svg = createSVG(d3, size, 200)
   createHeader(svg, 'Operating Systems', 25, 43)
-  createStats(svg, stats.data.data.operating_systems, size - 50, 8, 25, columns)
+  createStats(svg, stats.data.data.operating_systems, size - 50, 8, 25, columns, oss)
 
   ctx.type = 'image/svg+xml; charset=utf-8'
   ctx.body = Buffer.from(d3.svgString())

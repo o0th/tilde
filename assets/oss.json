@@ -1,0 +1,11 @@
+{
+  "Linux": {
+    "color": "#f0b912"
+  },
+  "Windows": {
+    "color": "#00b7ee"
+  },
+  "Mac": {
+    "color": "#4d66cb"
+  }
+}
