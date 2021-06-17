@@ -19,20 +19,11 @@
 | Profile    | 854/3     | 419/2     | 282/1     |
 | Repository | 838/3     | 415/2     | 271/1     |
 
-Example 1
+Examples
 
 [![Editors](https://tilde-yfho7.ondigitalocean.app/wakatime/o0th/stats/languages/last_7_days/838/3)](https://github.com/o0th/tilde)
-
-Example 1/2
-
-[![Editors](https://tilde-yfho7.ondigitalocean.app/wakatime/o0th/stats/languages/last_7_days/415/2)](https://github.com/o0th/tilde)
 [![Editors](https://tilde-yfho7.ondigitalocean.app/wakatime/o0th/stats/editors/last_7_days/415/2)](https://github.com/o0th/tilde)
-
-Example 1/3
-
-[![Editors](https://tilde-yfho7.ondigitalocean.app/wakatime/o0th/stats/languages/last_7_days/271/1)](https://github.com/o0th/tilde)
-[![Editors](https://tilde-yfho7.ondigitalocean.app/wakatime/o0th/stats/editors/last_7_days/271/1)](https://github.com/o0th/tilde)
-[![Editors](https://tilde-yfho7.ondigitalocean.app/wakatime/o0th/stats/oss/last_7_days/271/1)](https://github.com/o0th/tilde)
+[![Editors](https://tilde-yfho7.ondigitalocean.app/wakatime/o0th/stats/oss/last_7_days/415/2)](https://github.com/o0th/tilde)
 
 ### endpoint
 
