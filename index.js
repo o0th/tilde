@@ -18,12 +18,11 @@ const editors = require('./assets/editors.json')
 const languages = require('./assets/languages.json')
 const oss = require('./assets/oss.json')
 
-const createSVG = (d3, width, height) => {
+const createSVG = (d3, width) => {
   return d3.createSVG()
     .attr('xmlns', 'http://www.w3.org/2000/svg')
-    .attr('viewBox', `0 0 ${width} ${height}`)
+    .attr('viewBox', `0 0 ${width}`)
     .attr('width', width)
-    .attr('height', height)
 }
 
 const createHeader = (svg, text, x, y) => {
@@ -45,6 +44,8 @@ const createStats = (svg, stats, width, height, padding, columns, colors = {}) =
     .attr('rx', 5)
     .attr('fill', 'white')
 
+  svg.attr('height', Math.ceil(stats.length / columns) * 18 + 100)
+
   stats.reduce((accumulator, stat, index) => {
     const fill = colors[stat.name]?.color || colors.Other?.color || '#' + ((1 << 24) * Math.random() | 0).toString(16)
     svg.append('rect')
@@ -61,7 +62,7 @@ const createStats = (svg, stats, width, height, padding, columns, colors = {}) =
 
     if (columns === 1) {
       x = 0
-      y = (index + 1) * 12
+      y = (index + 1) * 18
     }
 
     if (columns === 2) {
