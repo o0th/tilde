@@ -17,7 +17,6 @@ const router = new Router()
 /** Global variables */
 const waka = 'https://wakatime.com/api/v1'
 const key = process.env.WAKATIME_KEY
-const width = 850
 
 /** Global files */
 const css = fs.readFileSync('./styles.css')
@@ -38,7 +37,7 @@ const createHeader = (svg, text, x, y) => {
     .text(text)
 }
 
-const createStats = (svg, stats, width, height, padding) => {
+const createStats = (svg, stats, width, height, padding, columns) => {
   svg.append('mask')
     .attr('id', 'stats')
     .append('rect')
@@ -60,13 +59,36 @@ const createStats = (svg, stats, width, height, padding) => {
       .attr('height', height)
       .attr('fill', fill)
 
-    const x = ((index + 1) % 2) ? 0 : 225
-    const y = ((index + 1) % 2) ? (index + 1) * 12 : index * 12
+    let x = 0
+    let y = 0
+
+    if (columns === 1) {
+      x = 0
+      y = (index + 1) * 12
+    }
+
+    if (columns === 2) {
+      x = (index % 2)
+        ? Math.round(width / columns)
+        : 0
+      y = (index === 0 || index === 1)
+        ? 18
+        : (Math.floor(index / columns) + 1) * 18
+    }
+
+    if (columns === 3) {
+      x = (index % 3)
+        ? Math.round(width / columns) * (index % 3)
+        : 0
+      y = (index === 0 || index === 1 || index === 2)
+        ? 18
+        : Math.floor((index / columns) + 1) * 18
+    }
 
     const child = svg.append('g')
       .append('svg')
       .attr('x', padding)
-      .attr('y', 73)
+      .attr('y', 64)
       .attr('transform', `translate(${x},${y})`)
 
     child.append('circle')
@@ -88,52 +110,55 @@ const createStats = (svg, stats, width, height, padding) => {
   return svg
 }
 
-router.get('/wakatime/:username/stats/editors/:range/:size', async (ctx) => {
+router.get('/wakatime/:username/stats/editors/:range/:size/:columns', async (ctx) => {
   const d3 = new D3({ styles: css.toString() })
 
   const range = ctx.params.range
   const username = ctx.params.username
-  const size = ctx.params.size
+  const size = Number(ctx.params.size)
+  const columns = Number(ctx.params.columns)
 
   const stats = await axios.get(`${waka}/users/${username}/stats/${range}?api_key=${key}`)
 
   const svg = createSVG(d3, size, 200)
   createHeader(svg, 'Editors', 25, 43)
-  createStats(svg, stats.data.data.editors, size - 50, 8, 25)
+  createStats(svg, stats.data.data.editors, size - 50, 8, 25, columns)
 
   ctx.type = 'image/svg+xml; charset=utf-8'
   ctx.body = Buffer.from(d3.svgString())
 })
 
-router.get('/wakatime/:username/stats/languages/:range/:size', async (ctx) => {
+router.get('/wakatime/:username/stats/languages/:range/:size/:columns', async (ctx) => {
   const d3 = new D3({ styles: css.toString() })
 
   const range = ctx.params.range
   const username = ctx.params.username
-  const size = ctx.params.size
+  const size = Number(ctx.params.size)
+  const columns = Number(ctx.params.columns)
 
   const stats = await axios.get(`${waka}/users/${username}/stats/${range}?api_key=${key}`)
 
   const svg = createSVG(d3, size, 200)
   createHeader(svg, 'Languages', 25, 43)
-  createStats(svg, stats.data.data.languages, size - 50, 8, 25)
+  createStats(svg, stats.data.data.languages, size - 50, 8, 25, columns)
 
   ctx.type = 'image/svg+xml; charset=utf-8'
   ctx.body = Buffer.from(d3.svgString())
 })
 
-router.get('/wakatime/:username/stats/oss/:range/:size', async (ctx) => {
+router.get('/wakatime/:username/stats/oss/:range/:size/:columns', async (ctx) => {
   const d3 = new D3({ styles: css.toString() })
 
   const range = ctx.params.range
   const username = ctx.params.username
-  const size = ctx.params.size
+  const size = Number(ctx.params.size)
+  const columns = Number(ctx.params.columns)
 
   const stats = await axios.get(`${waka}/users/${username}/stats/${range}?api_key=${key}`)
 
   const svg = createSVG(d3, size, 200)
   createHeader(svg, 'Operating Systems', 25, 43)
-  createStats(svg, stats.data.data.operating_systems, size - 50, 8, 25)
+  createStats(svg, stats.data.data.operating_systems, size - 50, 8, 25, columns)
 
   ctx.type = 'image/svg+xml; charset=utf-8'
   ctx.body = Buffer.from(d3.svgString())

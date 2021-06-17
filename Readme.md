@@ -2,7 +2,7 @@
 
 <p>
   <a href="https://github.com/o0th/tilde">
-    <img src="https://img.shields.io/badge/Version-0.2.0-green.svg?style=for-the-badge" alt="Version">
+    <img src="https://img.shields.io/badge/Version-0.3.0-green.svg?style=for-the-badge" alt="Version">
   </a>
   <a href="https://github.com/standard/standard">
     <img src="https://img.shields.io/badge/Code_style-Standard-green.svg?style=for-the-badge" alt="Standard">
@@ -20,29 +20,35 @@
 | Repository | 838       | 415       | 271       |
 
 
+### wakatime
+
+```
+https://tilde-yfho7.ondigitalocean.app/wakatime/<username>/stats/<option>/<range>/<width-in-px>/<number-of-columns>
+```
+
 ### wakatime languages
 
 ```markdown
-[![Languages](https://tilde-yfho7.ondigitalocean.app/wakatime/o0th/stats/languages/last_7_days/838)](https://github.com/o0th/tilde)
+[![Languages](https://tilde-yfho7.ondigitalocean.app/wakatime/o0th/stats/languages/last_7_days/838/3)](https://github.com/o0th/tilde)
 ```
 
-[![Editors](https://tilde-yfho7.ondigitalocean.app/wakatime/o0th/stats/languages/last_7_days/838)](https://github.com/o0th/tilde)
+[![Editors](https://tilde-yfho7.ondigitalocean.app/wakatime/o0th/stats/languages/last_7_days/838/3)](https://github.com/o0th/tilde)
 
 ### wakatime editors
 
 ```markdown
-[![Editors](https://tilde-yfho7.ondigitalocean.app/wakatime/o0th/stats/editors/last_7_days/838)](https://github.com/o0th/tilde)
+[![Editors](https://tilde-yfho7.ondigitalocean.app/wakatime/o0th/stats/editors/last_7_days/838/3)](https://github.com/o0th/tilde)
 ```
 
-[![Editors](https://tilde-yfho7.ondigitalocean.app/wakatime/o0th/stats/editors/last_7_days/838)](https://github.com/o0th/tilde)
+[![Editors](https://tilde-yfho7.ondigitalocean.app/wakatime/o0th/stats/editors/last_7_days/838/3)](https://github.com/o0th/tilde)
 
 ### wakatime oss
 
 ```markdown
-[![Oss](https://tilde-yfho7.ondigitalocean.app/wakatime/o0th/stats/oss/last_7_days/838)](https://github.com/o0th/tilde)
+[![Oss](https://tilde-yfho7.ondigitalocean.app/wakatime/o0th/stats/oss/last_7_days/838/3)](https://github.com/o0th/tilde)
 ```
 
-[![Oss](https://tilde-yfho7.ondigitalocean.app/wakatime/o0th/stats/oss/last_7_days/838)](https://github.com/o0th/tilde)
+[![Oss](https://tilde-yfho7.ondigitalocean.app/wakatime/o0th/stats/oss/last_7_days/838/3)](https://github.com/o0th/tilde)
 
 ### Contribute
 
