@@ -5,7 +5,12 @@
 
 .item { 
   font: 400 10px Sans-Serif;
+  font-weight: bold;
   fill: #8b949e;
+}
+
+.normal {
+  font-weight: normal;
 }
 
 .fade {
