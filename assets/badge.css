@@ -1,8 +1,14 @@
 .txt1,.txt2 {
   font: 200 12px Consolas, monaco, monospace;
+  letter-spacing: 2px;
 }
 
 .txt1.big,.txt2.big {
-  font: 200 16px Consolas, monaco, monospace;
+  font: 200 14px Consolas, monaco, monospace;
+  letter-spacing: 2px;
+}
+
+.txt2,.txt2.big {
+  font-weight: bold;
 }
 
