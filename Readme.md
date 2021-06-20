@@ -21,17 +21,29 @@ https://tilde-yfho7.ondigitalocean.app
 ### badges
 
 ```
-/badge/<fg1>/<bg1>/<text1>/<fg2>/<bg2>/<text2>
+/badge/<size>/<border>/<fg1>/<bg1>/<text1>/<fg2>/<bg2>/<text2>
 ```
 
 **Examples**
 
 ```
-/badge/F8F8F2/44475A/License/F8F8F2/6272A4/MIT
+/badge/F8F8F2/44475A/0/0/License/F8F8F2/6272A4/MIT
 ```
 
-[![License](https://tilde-yfho7.ondigitalocean.app/badge/F8F8F2/44475A/License/F8F8F2/6272A4/MIT)](https://github.com/o0th/tilde)
+[![License](https://tilde-yfho7.ondigitalocean.app/badge/0/0/F8F8F2/44475A/License/F8F8F2/6272A4/MIT)](https://github.com/o0th/tilde)
 
+```
+/badge/F8F8F2/44475A/0/2.5/License/F8F8F2/6272A4/MIT
+```
+
+[![License](https://tilde-yfho7.ondigitalocean.app/badge/0/2.5/F8F8F2/44475A/License/F8F8F2/6272A4/MIT)](https://github.com/o0th/tilde)
+
+
+```
+/badge/F8F8F2/44475A/1/0/License/F8F8F2/6272A4/MIT
+```
+
+[![License](https://tilde-yfho7.ondigitalocean.app/badge/1/0/F8F8F2/44475A/License/F8F8F2/6272A4/MIT)](https://github.com/o0th/tilde)
 
 ### wakatime
 

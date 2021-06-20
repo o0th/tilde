@@ -1,7 +1,8 @@
-.txt1 {
+.txt1,.txt2 {
   font: 200 12px Consolas, monaco, monospace;
 }
 
-.txt2 {
-  font: 380 12px  Consolas, monaco, monospace;
+.txt1.big,.txt2.big {
+  font: 200 16px Consolas, monaco, monospace;
 }
+
