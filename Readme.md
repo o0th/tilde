@@ -2,13 +2,13 @@
 
 <p>
   <a href="https://github.com/o0th/tilde">
-    <img src="https://tilde-yfho7.ondigitalocean.app/badge/version/o0th/tilde/1/0/f8f8f2/44475a/f8f8f2/6272a4" alt="Version">
+    <img src="https://tilde-yfho7.ondigitalocean.app/badge/version/o0th/tilde/0/0/f8f8f2/44475a/f8f8f2/6272a4" alt="Version">
   </a>
   <a href="https://github.com/standard/standard">
-    <img src="https://tilde-yfho7.ondigitalocean.app/badge/1/0/F8F8F2/44475A/Code style/F8F8F2/6272A4/Standard" alt="Standard">
+    <img src="https://tilde-yfho7.ondigitalocean.app/badge/0/0/F8F8F2/44475A/Code style/F8F8F2/6272A4/Standard" alt="Standard">
   </a>
   <a href="/LICENSE">
-    <img src="https://tilde-yfho7.ondigitalocean.app/badge/1/0/F8F8F2/44475A/License/F8F8F2/6272A4/MIT" alt="License">
+    <img src="https://tilde-yfho7.ondigitalocean.app/badge/0/0/F8F8F2/44475A/License/F8F8F2/6272A4/MIT" alt="License">
   </a>
 </p>
 
@@ -20,11 +20,14 @@ https://tilde-yfho7.ondigitalocean.app
 
 ### badges
 
+
 ```
 /badge/<size>/<border>/<fg1>/<bg1>/<text1>/<fg2>/<bg2>/<text2>
 ```
 
 **Examples**
+
+Normal size square borders
 
 ```
 /badge/0/0/F8F8F2/44475A/0/0/License/F8F8F2/6272A4/MIT
@@ -32,11 +35,15 @@ https://tilde-yfho7.ondigitalocean.app
 
 [![License](https://tilde-yfho7.ondigitalocean.app/badge/0/0/F8F8F2/44475A/License/F8F8F2/6272A4/MIT)](https://github.com/o0th/tilde)
 
+Normal size round borders
+
 ```
 /badge/0/2.5/F8F8F2/44475A/0/2.5/License/F8F8F2/6272A4/MIT
 ```
 
 [![License](https://tilde-yfho7.ondigitalocean.app/badge/0/2.5/F8F8F2/44475A/License/F8F8F2/6272A4/MIT)](https://github.com/o0th/tilde)
+
+Big size flat borders
 
 ```
 /badge/1/0/F8F8F2/44475A/1/0/License/F8F8F2/6272A4/MIT

@@ -7,6 +7,11 @@ const badge = require('./lib/routes/badge')
 
 const app = new Koa()
 
+app.use((ctx, next) => {
+  process.stdout.write(`${ctx.origin} ${ctx.url}\n`)
+  return next()
+})
+
 app.use(wakatime.routes())
 app.use(wakatime.allowedMethods())
 
