@@ -12,19 +12,6 @@
   </a>
 </p>
 
-### Sizing
-
-| Readme     | 1         | 1/2       | 1/3       |
-| ---------- | :-------: | :-------: | :-------: |
-| Profile    | 854/3     | 419/2     | 282/1     |
-| Repository | 838/3     | 415/2     | 271/1     |
-
-Examples
-
-[![Editors](https://tilde-yfho7.ondigitalocean.app/wakatime/o0th/stats/languages/last_7_days/838/3)](https://github.com/o0th/tilde)
-[![Editors](https://tilde-yfho7.ondigitalocean.app/wakatime/o0th/stats/editors/last_7_days/415/2)](https://github.com/o0th/tilde)
-[![Editors](https://tilde-yfho7.ondigitalocean.app/wakatime/o0th/stats/oss/last_7_days/415/2)](https://github.com/o0th/tilde)
-
 ### endpoint
 
 ```
@@ -40,10 +27,10 @@ https://tilde-yfho7.ondigitalocean.app
 **Examples**
 
 ```
-/badge/f8f8f2/282a36/License/f8f8f2/50fa7b/MIT
+/badge/F8F8F2/44475A/License/F8F8F2/6272A4/MIT
 ```
 
-[![License](https://tilde-yfho7.ondigitalocean.app/badge/f8f8f2/282a36/License/f8f8f2/50fa7b/MIT)](https://github.com/o0th/tilde)
+[![License](https://tilde-yfho7.ondigitalocean.app/badge/F8F8F2/44475A/License/F8F8F2/6272A4/MIT)](https://github.com/o0th/tilde)
 
 
 ### wakatime
@@ -52,12 +39,28 @@ https://tilde-yfho7.ondigitalocean.app
 /wakatime/<username>/stats/<option>/<range>/<width-in-px>/<number-of-columns>
 ```
 
-Parameters
+**Examples**
+
+[![Editors](https://tilde-yfho7.ondigitalocean.app/wakatime/o0th/stats/languages/last_7_days/838/3)](https://github.com/o0th/tilde)
+[![Editors](https://tilde-yfho7.ondigitalocean.app/wakatime/o0th/stats/editors/last_7_days/415/2)](https://github.com/o0th/tilde)
+[![Editors](https://tilde-yfho7.ondigitalocean.app/wakatime/o0th/stats/oss/last_7_days/415/2)](https://github.com/o0th/tilde)
+
+**Parameters**
 
 `option`: `languages`, `editors`, `oss`
+
 `range`: `last_7_days`, `last_30_days`, `last_6_months`, `last_year`
+
 `width-in-pizel`: see sizing
+
 `number-of-columns`: `1`, `2`, `3`
+
+**Sizing**
+
+| Readme     | 1         | 1/2       | 1/3       |
+| ---------- | :-------: | :-------: | :-------: |
+| Profile    | 854/3     | 419/2     | 282/1     |
+| Repository | 838/3     | 415/2     | 271/1     |
 
 ### Contribute
 
