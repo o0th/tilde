@@ -2,7 +2,7 @@
 
 <p>
   <a href="https://github.com/o0th/tilde">
-    <img src="https://tilde-yfho7.ondigitalocean.app/badge/1/0/F8F8F2/44475A/Version/F8F8F2/6272A4/0.4.1" alt="Version">
+    <img src="https://tilde-yfho7.ondigitalocean.app/badge/1/0/F8F8F2/44475A/Version/F8F8F2/6272A4/0.4.3" alt="Version">
   </a>
   <a href="https://github.com/standard/standard">
     <img src="https://tilde-yfho7.ondigitalocean.app/badge/1/0/F8F8F2/44475A/Code style/F8F8F2/6272A4/Standard" alt="Standard">

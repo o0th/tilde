@@ -1,6 +1,6 @@
 {
   "name": "tilde",
-  "version": "0.4.2",
+  "version": "0.4.3",
   "description": "svg for github readme",
   "main": "index.js",
   "scripts": {

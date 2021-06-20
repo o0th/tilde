@@ -1,16 +1,11 @@
-@font-face {
-  font-family: 'Source';
-  src: url('/source.ttf')
-}
-
 .txt1,.txt2 {
-  font: 400 11px 'Source';
+  font: 400 11px ui-monospace, SFMono-Regular, SF Mono, Consolas, Liberation Mono, Menlo, monospace;
   font-variant: unset;
   letter-spacing: 2px;
 }
 
 .txt1.big,.txt2.big {
-  font: 400 14px 'Source';
+  font: 400 11px ui-monospace, SFMono-Regular, SF Mono, Consolas, Liberation Mono, Menlo, monospace;
   letter-spacing: 2px;
 }
 
