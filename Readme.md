@@ -31,6 +31,21 @@ Examples
 https://tilde-yfho7.ondigitalocean.app
 ```
 
+### badges
+
+```
+/badge/<fg1>/<bg1>/<text1>/<fg2>/<bg2>/<text2>
+```
+
+**Examples**
+
+```
+/badge/f8f8f2/282a36/License/f8f8f2/50fa7b/MIT
+```
+
+[![License](https://tilde-yfho7.ondigitalocean.app/badge/f8f8f2/282a36/License/f8f8f2/50fa7b/MIT)](https://github.com/o0th/tilde)
+
+
 ### wakatime
 
 ```

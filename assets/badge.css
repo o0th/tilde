@@ -1,9 +1,7 @@
 .txt1 {
-  font: 200 12px Monaco;
-  fill: #fff;
+  font: 200 12px Consolas, monaco, monospace;
 }
 
 .txt2 {
-  font: 380 12px Monospace;
-  fill: #000;
+  font: 380 12px  Consolas, monaco, monospace;
 }
