@@ -2,13 +2,13 @@
 
 <p>
   <a href="https://github.com/o0th/tilde">
-    <img src="https://img.shields.io/badge/Version-0.3.2-green.svg?style=for-the-badge" alt="Version">
+    <img src="https://tilde-yfho7.ondigitalocean.app/badge/1/0/F8F8F2/44475A/Version/F8F8F2/6272A4/0.4.1" alt="Version">
   </a>
   <a href="https://github.com/standard/standard">
-    <img src="https://img.shields.io/badge/Code_style-Standard-green.svg?style=for-the-badge" alt="Standard">
+    <img src="https://tilde-yfho7.ondigitalocean.app/badge/1/0/F8F8F2/44475A/Code style/F8F8F2/6272A4/Standard" alt="Standard">
   </a>
   <a href="/LICENSE">
-    <img src="https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge" alt="License">
+    <img src="https://tilde-yfho7.ondigitalocean.app/badge/1/0/F8F8F2/44475A/License/F8F8F2/6272A4/MIT" alt="License">
   </a>
 </p>
 
