@@ -1,6 +1,6 @@
 {
   "name": "tilde",
-  "version": "0.4.1",
+  "version": "0.4.2",
   "description": "svg for github readme",
   "main": "index.js",
   "scripts": {
@@ -31,7 +31,8 @@
     "axios": "^0.21.1",
     "d3-node": "^2.2.2",
     "dotenv": "^10.0.0",
-    "koa": "^2.13.1"
+    "koa": "^2.13.1",
+    "koa-static": "^5.0.0"
   },
   "engines": {
     "node": ">=16"
