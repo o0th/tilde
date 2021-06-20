@@ -2,7 +2,7 @@
 
 <p>
   <a href="https://github.com/o0th/tilde">
-    <img src="https://tilde-yfho7.ondigitalocean.app/badge/1/0/F8F8F2/44475A/Version/F8F8F2/6272A4/0.4.3" alt="Version">
+    <img src="https://tilde-yfho7.ondigitalocean.app/badge/version/o0th/tilde/1/0/f8f8f2/44475a/f8f8f2/6272a4" alt="Version">
   </a>
   <a href="https://github.com/standard/standard">
     <img src="https://tilde-yfho7.ondigitalocean.app/badge/1/0/F8F8F2/44475A/Code style/F8F8F2/6272A4/Standard" alt="Standard">
@@ -38,12 +38,27 @@ https://tilde-yfho7.ondigitalocean.app
 
 [![License](https://tilde-yfho7.ondigitalocean.app/badge/0/2.5/F8F8F2/44475A/License/F8F8F2/6272A4/MIT)](https://github.com/o0th/tilde)
 
-
 ```
 /badge/1/0/F8F8F2/44475A/1/0/License/F8F8F2/6272A4/MIT
 ```
 
 [![License](https://tilde-yfho7.ondigitalocean.app/badge/1/0/F8F8F2/44475A/License/F8F8F2/6272A4/MIT)](https://github.com/o0th/tilde)
+
+### version badges
+
+Automatically retrieve version from package.json inside repository
+
+```
+/badge/version/<github-username>/<repository>/<size>/<boder>/<fg1>/<bg1>/<fg2>/<bg2>
+```
+
+**Example**
+
+```
+/badge/version/o0th/tilde/1/0/f8f8f2/44475a/f8f8f2/6272a4
+```
+
+[![Version](https://tilde-yfho7.ondigitalocean.app/badge/0/0/F8F8F2/44475A/License/F8F8F2/6272A4/MIT)](https://github.com/o0th/tilde)
 
 ### wakatime
 
