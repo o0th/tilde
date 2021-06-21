@@ -2,70 +2,65 @@
 
 <p>
   <a href="https://github.com/o0th/tilde">
-    <img src="https://tilde-yfho7.ondigitalocean.app/badge/version/o0th/tilde/0/0/f8f8f2/44475a/f8f8f2/6272a4" alt="Version">
-  </a>
-  <a href="https://github.com/standard/standard">
-    <img src="https://tilde-yfho7.ondigitalocean.app/badge/0/0/F8F8F2/44475A/Code style/F8F8F2/6272A4/Standard" alt="Standard">
+    <img src="https://tilde-yfho7.ondigitalocean.app/badge/version/o0th/tilde/0/0/f8f8f2/ff79c6/f8f8f2/6272a4" alt="Version">
   </a>
   <a href="/LICENSE">
     <img src="https://tilde-yfho7.ondigitalocean.app/badge/0/0/F8F8F2/44475A/License/F8F8F2/6272A4/MIT" alt="License">
   </a>
 </p>
 
-### endpoint
+### Endpoint
 
 ```
 https://tilde-yfho7.ondigitalocean.app
 ```
 
-### badges
-
-
-```
-/badge/<size>/<border>/<fg1>/<bg1>/<text1>/<fg2>/<bg2>/<text2>
-```
-
-**Examples**
-
-Normal size square borders
+### Badges
 
 ```
-/badge/0/0/F8F8F2/44475A/0/0/License/F8F8F2/6272A4/MIT
+/badge/<size>/<rx>/<fg1>/<bg1>/<txt1>/<fg2>/<bg2>/<txt2>
 ```
 
-[![License](https://tilde-yfho7.ondigitalocean.app/badge/0/0/F8F8F2/44475A/License/F8F8F2/6272A4/MIT)](https://github.com/o0th/tilde)
+| Parameters | Descriptions                                                                          |
+| ---------- | ------------------------------------------------------------------------------------- |
+| <size>     | Badge size, `0` for small, `1` for large                                              |
+| <rx>       | [Radius on the x-axis](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/rx) |
+| <fg1>      | Foreground for the badge's left side in hex                                           |
+| <bg1>      | Background for the badge's left side in hex                                           |
+| <txt1>     | Text for the badge's left side                                                        |
+| <fg2>      | Foreground for the badge's right side in hex                                          |
+| <bg2>      | Background for the badge's right side in hex                                          |
+| <txt2>     | Text for the badge's right side                                                       |
 
-Normal size round borders
+| Badges                                                                                                                                  | Codes                                                        |
+| --------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------ |
+| [![License](https://tilde-yfho7.ondigitalocean.app/badge/0/0/F8F8F2/44475A/License/F8F8F2/6272A4/MIT)](https://github.com/o0th/tilde)   | `/badge/0/0/F8F8F2/44475A/License/F8F8F2/6272A4/MIT`         |
+| [![License](https://tilde-yfho7.ondigitalocean.app/badge/0/2.5/F8F8F2/44475A/License/F8F8F2/6272A4/MIT)](https://github.com/o0th/tilde) | `/badge/0/2.5/F8F8F2/44475A/0/2.5/License/F8F8F2/6272A4/MIT` |
+| [![License](https://tilde-yfho7.ondigitalocean.app/badge/1/0/F8F8F2/44475A/License/F8F8F2/6272A4/MIT)](https://github.com/o0th/tilde)   | `/badge/1/0/F8F8F2/44475A/1/0/License/F8F8F2/6272A4/MIT`     |
 
-```
-/badge/0/2.5/F8F8F2/44475A/0/2.5/License/F8F8F2/6272A4/MIT
-```
+### Version badges
 
-[![License](https://tilde-yfho7.ondigitalocean.app/badge/0/2.5/F8F8F2/44475A/License/F8F8F2/6272A4/MIT)](https://github.com/o0th/tilde)
-
-Big size flat borders
-
-```
-/badge/1/0/F8F8F2/44475A/1/0/License/F8F8F2/6272A4/MIT
-```
-
-[![License](https://tilde-yfho7.ondigitalocean.app/badge/1/0/F8F8F2/44475A/License/F8F8F2/6272A4/MIT)](https://github.com/o0th/tilde)
-
-### version badges
-
-Automatically retrieve version from package.json inside repository
-
-```
-/badge/version/<github-username>/<repository>/<size>/<boder>/<fg1>/<bg1>/<fg2>/<bg2>
-```
-
-**Example**
+Automatically retrieve version from package.json inside github repository
 
 ```
-/badge/version/o0th/tilde/1/0/f8f8f2/44475a/f8f8f2/6272a4
+/badge/version/<org>/<rep>/<size>/<rx>/<fg1>/<bg1>/<fg2>/<bg2>
 ```
 
-[![Version](https://tilde-yfho7.ondigitalocean.app/badge/0/0/F8F8F2/44475A/License/F8F8F2/6272A4/MIT)](https://github.com/o0th/tilde)
+| Parameters | Descriptions                                                                          |
+| ---------- | ------------------------------------------------------------------------------------- |
+| <org>      | Github's organization or username                                                     |
+| <repo>     | Repository name                                                                       |
+| <size>     | Badge size, `0` for small, `1` for large                                              |
+| <rx>       | [Radius on the x-axis](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/rx) |
+| <fg1>      | Foreground for the badge's left side in hex                                           |
+| <bg1>      | Background for the badge's left side in hex                                           |
+| <fg2>      | Foreground for the badge's right side in hex                                          |
+| <bg2>      | Background for the badge's right side in hex                                          |
+
+| Badges                                                                                                                                       | Codes                                                        |
+| -------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------ |
+| [![Version](https://tilde-yfho7.ondigitalocean.app/badge/version/o0th/tilde/0/0/f8f8f2/ff79c6/f8f8f2/6272a4)](https://github.com/o0th/tilde) | `/badge/version/o0th/tilde/0/0/f8f8f2/ff79c6/f8f8f2/6272a4`  |
+
 
 ### wakatime
 
