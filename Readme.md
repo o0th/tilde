@@ -48,14 +48,14 @@ Automatically retrieve version from package.json inside github repository
 
 | Parameters | Descriptions                                                                          |
 | ---------- | ------------------------------------------------------------------------------------- |
-| <org>      | Github's organization or username                                                     |
-| <repo>     | Repository name                                                                       |
-| <size>     | Badge size, `0` for small, `1` for large                                              |
-| <rx>       | [Radius on the x-axis](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/rx) |
-| <fg1>      | Foreground for the badge's left side in hex                                           |
-| <bg1>      | Background for the badge's left side in hex                                           |
-| <fg2>      | Foreground for the badge's right side in hex                                          |
-| <bg2>      | Background for the badge's right side in hex                                          |
+| `org`      | Github's organization or username                                                     |
+| `repo`     | Repository name                                                                       |
+| `size`     | Badge size, `0` for small, `1` for large                                              |
+| `rx`       | [Radius on the x-axis](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/rx) |
+| `fg1`      | Foreground for the badge's left side in hex                                           |
+| `bg1`      | Background for the badge's left side in hex                                           |
+| `fg2`      | Foreground for the badge's right side in hex                                          |
+| `bg2`      | Background for the badge's right side in hex                                          |
 
 | Badges                                                                                                                                       | Codes                                                        |
 | -------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------ |
@@ -65,26 +65,29 @@ Automatically retrieve version from package.json inside github repository
 ### wakatime
 
 ```
-/wakatime/<username>/stats/<option>/<range>/<width-in-px>/<number-of-columns>
+/wakatime/<username>/stats/<display>/<range>/<width-in-px>/<number-of-columns>
 ```
 
-**Examples**
+| Parameters          | Descriptions                          |
+| ------------------- | ------------------------------------- |
+| `username`          | Wakatime username                     |
+| `display`           | Display `editors`, `languages`, `oss` |
+| `width-in-px`       | Width for the svg                     |
+| `number-of-columns` | Columns                               |
+
+Examples
+
+```markdown
+[![Editors](https://tilde-yfho7.ondigitalocean.app/wakatime/o0th/stats/languages/last_7_days/838/3)](https://github.com/o0th/tilde)
+[![Editors](https://tilde-yfho7.ondigitalocean.app/wakatime/o0th/stats/editors/last_7_days/415/2)](https://github.com/o0th/tilde)
+[![Editors](https://tilde-yfho7.ondigitalocean.app/wakatime/o0th/stats/oss/last_7_days/415/2)](https://github.com/o0th/tilde)
+```
 
 [![Editors](https://tilde-yfho7.ondigitalocean.app/wakatime/o0th/stats/languages/last_7_days/838/3)](https://github.com/o0th/tilde)
 [![Editors](https://tilde-yfho7.ondigitalocean.app/wakatime/o0th/stats/editors/last_7_days/415/2)](https://github.com/o0th/tilde)
 [![Editors](https://tilde-yfho7.ondigitalocean.app/wakatime/o0th/stats/oss/last_7_days/415/2)](https://github.com/o0th/tilde)
 
-**Parameters**
-
-`option`: `languages`, `editors`, `oss`
-
-`range`: `last_7_days`, `last_30_days`, `last_6_months`, `last_year`
-
-`width-in-pizel`: see sizing
-
-`number-of-columns`: `1`, `2`, `3`
-
-**Sizing**
+Sizing suggestions
 
 | Readme     | 1         | 1/2       | 1/3       |
 | ---------- | :-------: | :-------: | :-------: |
