@@ -72,24 +72,25 @@ Automatically retrieve version from package.json inside github repository
 /wakatime/<username>/stats/<display>/<range>/<width-in-px>/<number-of-columns>
 ```
 
-| Parameters          | Descriptions                          |
-| ------------------- | ------------------------------------- |
-| `username`          | Wakatime username                     |
-| `display`           | Display `editors`, `languages`, `oss` |
-| `width-in-px`       | Width for the svg                     |
-| `number-of-columns` | Number of columns for item listing    |
+| Parameters          | Descriptions                                                          |
+| ------------------- | --------------------------------------------------------------------- |
+| `username`          | Wakatime username                                                     |
+| `display`           | Display `editors`, `languages`, `oss`                                 |
+| `range`             | One of `last_7_days`, `last_30_days`, `last_6_months`, or `last_year` |
+| `width-in-px`       | Width for the svg                                                     |
+| `number-of-columns` | Number of columns for item listing                                    |
 
 ### Examples
 
 ```markdown
-[![Editors](https://tilde-yfho7.ondigitalocean.app/wakatime/o0th/stats/languages/last_7_days/838/3)](https://github.com/o0th/tilde)
+[![Languages](https://tilde-yfho7.ondigitalocean.app/wakatime/o0th/stats/languages/last_7_days/838/3)](https://github.com/o0th/tilde)
 [![Editors](https://tilde-yfho7.ondigitalocean.app/wakatime/o0th/stats/editors/last_7_days/415/2)](https://github.com/o0th/tilde)
-[![Editors](https://tilde-yfho7.ondigitalocean.app/wakatime/o0th/stats/oss/last_7_days/415/2)](https://github.com/o0th/tilde)
+[![Operating Systems](https://tilde-yfho7.ondigitalocean.app/wakatime/o0th/stats/oss/last_7_days/415/2)](https://github.com/o0th/tilde)
 ```
 
-[![Editors](https://tilde-yfho7.ondigitalocean.app/wakatime/o0th/stats/languages/last_7_days/838/3)](https://github.com/o0th/tilde)
+[![Languages](https://tilde-yfho7.ondigitalocean.app/wakatime/o0th/stats/languages/last_7_days/838/3)](https://github.com/o0th/tilde)
 [![Editors](https://tilde-yfho7.ondigitalocean.app/wakatime/o0th/stats/editors/last_7_days/415/2)](https://github.com/o0th/tilde)
-[![Editors](https://tilde-yfho7.ondigitalocean.app/wakatime/o0th/stats/oss/last_7_days/415/2)](https://github.com/o0th/tilde)
+[![Operating Systems](https://tilde-yfho7.ondigitalocean.app/wakatime/o0th/stats/oss/last_7_days/415/2)](https://github.com/o0th/tilde)
 
 ### Sizing suggestions
 
