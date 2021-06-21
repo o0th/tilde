@@ -59,7 +59,7 @@ Automatically retrieve version from package.json inside github repository
 
 | Badges                                                                                                                                       | Codes                                                        |
 | -------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------ |
-| [![Version](https://tilde-yfho7.ondigitalocean.app/badge/version/o0th/tilde/0/0/f8f8f2/6272a4/f8f8f2/ff79c6)](https://github.com/o0th/tilde) | `/badge/version/o0th/tilde/0/0/f8f8f2/ff79c6/f8f8f2/6272a4`  |
+| [![Version](https://tilde-yfho7.ondigitalocean.app/badge/version/o0th/tilde/0/0/f8f8f2/44475A/f8f8f2/ff79c6)](https://github.com/o0th/tilde) | `/badge/version/o0th/tilde/0/0/f8f8f2/44475a/f8f8f2/ff79c6`  |
 
 
 ## Wakatime stats
