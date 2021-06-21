@@ -2,7 +2,7 @@
 
 <p>
   <a href="https://github.com/o0th/tilde">
-    <img src="https://tilde-yfho7.ondigitalocean.app/badge/version/o0th/tilde/0/0/f8f8f2/ff79c6/f8f8f2/6272a4" alt="Version">
+    <img src="https://tilde-yfho7.ondigitalocean.app/badge/version/o0th/tilde/0/0/f8f8f2/44475a/f8f8f2/ff79c6" alt="Version">
   </a>
   <a href="/LICENSE">
     <img src="https://tilde-yfho7.ondigitalocean.app/badge/0/0/F8F8F2/44475A/License/F8F8F2/6272A4/MIT" alt="License">
@@ -23,14 +23,14 @@ https://tilde-yfho7.ondigitalocean.app
 
 | Parameters | Descriptions                                                                          |
 | ---------- | ------------------------------------------------------------------------------------- |
-| <size>     | Badge size, `0` for small, `1` for large                                              |
-| <rx>       | [Radius on the x-axis](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/rx) |
-| <fg1>      | Foreground for the badge's left side in hex                                           |
-| <bg1>      | Background for the badge's left side in hex                                           |
-| <txt1>     | Text for the badge's left side                                                        |
-| <fg2>      | Foreground for the badge's right side in hex                                          |
-| <bg2>      | Background for the badge's right side in hex                                          |
-| <txt2>     | Text for the badge's right side                                                       |
+| `size`     | Badge size, `0` for small, `1` for large                                              |
+| `rx`       | [Radius on the x-axis](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/rx) |
+| `fg1`      | Foreground for the badge's left side in hex                                           |
+| `bg1`      | Background for the badge's left side in hex                                           |
+| `txt1`     | Text for the badge's left side                                                        |
+| `fg2`      | Foreground for the badge's right side in hex                                          |
+| `bg2`      | Background for the badge's right side in hex                                          |
+| `txt2`     | Text for the badge's right side                                                       |
 
 | Badges                                                                                                                                  | Codes                                                        |
 | --------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------ |
@@ -59,7 +59,7 @@ Automatically retrieve version from package.json inside github repository
 
 | Badges                                                                                                                                       | Codes                                                        |
 | -------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------ |
-| [![Version](https://tilde-yfho7.ondigitalocean.app/badge/version/o0th/tilde/0/0/f8f8f2/ff79c6/f8f8f2/6272a4)](https://github.com/o0th/tilde) | `/badge/version/o0th/tilde/0/0/f8f8f2/ff79c6/f8f8f2/6272a4`  |
+| [![Version](https://tilde-yfho7.ondigitalocean.app/badge/version/o0th/tilde/0/0/f8f8f2/6272a4/f8f8f2/ff79c6)](https://github.com/o0th/tilde) | `/badge/version/o0th/tilde/0/0/f8f8f2/ff79c6/f8f8f2/6272a4`  |
 
 
 ## Wakatime stats
