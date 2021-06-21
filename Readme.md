@@ -1,109 +1,110 @@
-## ~ tilde
+## tilde
 
 <p>
   <a href="https://github.com/o0th/tilde">
-    <img src="https://tilde-yfho7.ondigitalocean.app/badge/version/o0th/tilde/0/0/f8f8f2/44475a/f8f8f2/6272a4" alt="Version">
-  </a>
-  <a href="https://github.com/standard/standard">
-    <img src="https://tilde-yfho7.ondigitalocean.app/badge/0/0/F8F8F2/44475A/Code style/F8F8F2/6272A4/Standard" alt="Standard">
+    <img src="https://tilde-yfho7.ondigitalocean.app/badge/version/o0th/tilde/0/0/f8f8f2/44475a/f8f8f2/ff79c6" alt="Version">
   </a>
   <a href="/LICENSE">
     <img src="https://tilde-yfho7.ondigitalocean.app/badge/0/0/F8F8F2/44475A/License/F8F8F2/6272A4/MIT" alt="License">
   </a>
 </p>
 
-### endpoint
+## Endpoint
 
 ```
 https://tilde-yfho7.ondigitalocean.app
 ```
 
-### badges
-
-
-```
-/badge/<size>/<border>/<fg1>/<bg1>/<text1>/<fg2>/<bg2>/<text2>
-```
-
-**Examples**
-
-Normal size square borders
+## Badges
 
 ```
-/badge/0/0/F8F8F2/44475A/0/0/License/F8F8F2/6272A4/MIT
+/badge/<size>/<rx>/<fg1>/<bg1>/<txt1>/<fg2>/<bg2>/<txt2>
 ```
 
-[![License](https://tilde-yfho7.ondigitalocean.app/badge/0/0/F8F8F2/44475A/License/F8F8F2/6272A4/MIT)](https://github.com/o0th/tilde)
+| Parameters | Descriptions                                                                          |
+| ---------- | ------------------------------------------------------------------------------------- |
+| `size`     | Badge size, `0` for small, `1` for large                                              |
+| `rx`       | [Radius on the x-axis](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/rx) |
+| `fg1`      | Foreground for the badge's left side in hex                                           |
+| `bg1`      | Background for the badge's left side in hex                                           |
+| `txt1`     | Text for the badge's left side                                                        |
+| `fg2`      | Foreground for the badge's right side in hex                                          |
+| `bg2`      | Background for the badge's right side in hex                                          |
+| `txt2`     | Text for the badge's right side                                                       |
 
-Normal size round borders
+### Examples
 
-```
-/badge/0/2.5/F8F8F2/44475A/0/2.5/License/F8F8F2/6272A4/MIT
-```
+| Badges                                                                                                                                  | Codes                                                        |
+| --------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------ |
+| [![License](https://tilde-yfho7.ondigitalocean.app/badge/0/0/F8F8F2/44475A/License/F8F8F2/6272A4/MIT)](https://github.com/o0th/tilde)   | `/badge/0/0/F8F8F2/44475A/License/F8F8F2/6272A4/MIT`         |
+| [![License](https://tilde-yfho7.ondigitalocean.app/badge/0/2.5/F8F8F2/44475A/License/F8F8F2/6272A4/MIT)](https://github.com/o0th/tilde) | `/badge/0/2.5/F8F8F2/44475A/0/2.5/License/F8F8F2/6272A4/MIT` |
+| [![License](https://tilde-yfho7.ondigitalocean.app/badge/1/0/F8F8F2/44475A/License/F8F8F2/6272A4/MIT)](https://github.com/o0th/tilde)   | `/badge/1/0/F8F8F2/44475A/1/0/License/F8F8F2/6272A4/MIT`     |
 
-[![License](https://tilde-yfho7.ondigitalocean.app/badge/0/2.5/F8F8F2/44475A/License/F8F8F2/6272A4/MIT)](https://github.com/o0th/tilde)
+## Version badges
 
-Big size flat borders
-
-```
-/badge/1/0/F8F8F2/44475A/1/0/License/F8F8F2/6272A4/MIT
-```
-
-[![License](https://tilde-yfho7.ondigitalocean.app/badge/1/0/F8F8F2/44475A/License/F8F8F2/6272A4/MIT)](https://github.com/o0th/tilde)
-
-### version badges
-
-Automatically retrieve version from package.json inside repository
-
-```
-/badge/version/<github-username>/<repository>/<size>/<boder>/<fg1>/<bg1>/<fg2>/<bg2>
-```
-
-**Example**
+Automatically retrieve version from package.json inside github repository
 
 ```
-/badge/version/o0th/tilde/1/0/f8f8f2/44475a/f8f8f2/6272a4
+/badge/version/<org>/<rep>/<size>/<rx>/<fg1>/<bg1>/<fg2>/<bg2>
 ```
 
-[![Version](https://tilde-yfho7.ondigitalocean.app/badge/0/0/F8F8F2/44475A/License/F8F8F2/6272A4/MIT)](https://github.com/o0th/tilde)
+| Parameters | Descriptions                                                                          |
+| ---------- | ------------------------------------------------------------------------------------- |
+| `org`      | Github's organization or username                                                     |
+| `repo`     | Repository name                                                                       |
+| `size`     | Badge size, `0` for small, `1` for large                                              |
+| `rx`       | [Radius on the x-axis](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/rx) |
+| `fg1`      | Foreground for the badge's left side in hex                                           |
+| `bg1`      | Background for the badge's left side in hex                                           |
+| `fg2`      | Foreground for the badge's right side in hex                                          |
+| `bg2`      | Background for the badge's right side in hex                                          |
 
-### wakatime
+### Examples
+
+| Badges                                                                                                                                       | Codes                                                        |
+| -------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------ |
+| [![Version](https://tilde-yfho7.ondigitalocean.app/badge/version/o0th/tilde/0/0/f8f8f2/44475A/f8f8f2/ff79c6)](https://github.com/o0th/tilde) | `/badge/version/o0th/tilde/0/0/f8f8f2/44475a/f8f8f2/ff79c6`  |
+
+
+## Wakatime stats
 
 ```
-/wakatime/<username>/stats/<option>/<range>/<width-in-px>/<number-of-columns>
+/wakatime/<username>/stats/<display>/<range>/<width-in-px>/<number-of-columns>
 ```
 
-**Examples**
+| Parameters          | Descriptions                                                          |
+| ------------------- | --------------------------------------------------------------------- |
+| `username`          | Wakatime username                                                     |
+| `display`           | Display `editors`, `languages`, `oss`                                 |
+| `range`             | One of `last_7_days`, `last_30_days`, `last_6_months`, or `last_year` |
+| `width-in-px`       | Width for the svg                                                     |
+| `number-of-columns` | Number of columns for item listing                                    |
 
-[![Editors](https://tilde-yfho7.ondigitalocean.app/wakatime/o0th/stats/languages/last_7_days/838/3)](https://github.com/o0th/tilde)
+### Examples
+
+```markdown
+[![Languages](https://tilde-yfho7.ondigitalocean.app/wakatime/o0th/stats/languages/last_7_days/838/3)](https://github.com/o0th/tilde)
 [![Editors](https://tilde-yfho7.ondigitalocean.app/wakatime/o0th/stats/editors/last_7_days/415/2)](https://github.com/o0th/tilde)
-[![Editors](https://tilde-yfho7.ondigitalocean.app/wakatime/o0th/stats/oss/last_7_days/415/2)](https://github.com/o0th/tilde)
+[![Operating Systems](https://tilde-yfho7.ondigitalocean.app/wakatime/o0th/stats/oss/last_7_days/415/2)](https://github.com/o0th/tilde)
+```
 
-**Parameters**
+[![Languages](https://tilde-yfho7.ondigitalocean.app/wakatime/o0th/stats/languages/last_7_days/838/3)](https://github.com/o0th/tilde)
+[![Editors](https://tilde-yfho7.ondigitalocean.app/wakatime/o0th/stats/editors/last_7_days/415/2)](https://github.com/o0th/tilde)
+[![Operating Systems](https://tilde-yfho7.ondigitalocean.app/wakatime/o0th/stats/oss/last_7_days/415/2)](https://github.com/o0th/tilde)
 
-`option`: `languages`, `editors`, `oss`
-
-`range`: `last_7_days`, `last_30_days`, `last_6_months`, `last_year`
-
-`width-in-pizel`: see sizing
-
-`number-of-columns`: `1`, `2`, `3`
-
-**Sizing**
+### Sizing suggestions
 
 | Readme     | 1         | 1/2       | 1/3       |
 | ---------- | :-------: | :-------: | :-------: |
 | Profile    | 854/3     | 419/2     | 282/1     |
 | Repository | 838/3     | 415/2     | 271/1     |
 
-### Contribute
+## Contribute
 
-`tilde` is an opensource project. If you want to say thank you
-and/or support the active development add a :star: to the project
-or donate a :coffee:.
+If you want to say thank you and/or support the active development add a :star:
+to the project or donate a :coffee:.
 
 <a href="https://www.buymeacoffee.com/o0th">
   <img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=o0th&button_colour=FFDD00&font_colour=000000&font_family=Cookie&outline_colour=000000&coffee_colour=ffffff">
 </a>
-
 
