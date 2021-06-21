@@ -32,6 +32,8 @@ https://tilde-yfho7.ondigitalocean.app
 | `bg2`      | Background for the badge's right side in hex                                          |
 | `txt2`     | Text for the badge's right side                                                       |
 
+### Examples
+
 | Badges                                                                                                                                  | Codes                                                        |
 | --------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------ |
 | [![License](https://tilde-yfho7.ondigitalocean.app/badge/0/0/F8F8F2/44475A/License/F8F8F2/6272A4/MIT)](https://github.com/o0th/tilde)   | `/badge/0/0/F8F8F2/44475A/License/F8F8F2/6272A4/MIT`         |
@@ -56,6 +58,8 @@ Automatically retrieve version from package.json inside github repository
 | `bg1`      | Background for the badge's left side in hex                                           |
 | `fg2`      | Foreground for the badge's right side in hex                                          |
 | `bg2`      | Background for the badge's right side in hex                                          |
+
+### Examples
 
 | Badges                                                                                                                                       | Codes                                                        |
 | -------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------ |
