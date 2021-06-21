@@ -1,4 +1,4 @@
-## ~ tilde
+## tilde
 
 <p>
   <a href="https://github.com/o0th/tilde">
@@ -9,13 +9,13 @@
   </a>
 </p>
 
-### Endpoint
+## Endpoint
 
 ```
 https://tilde-yfho7.ondigitalocean.app
 ```
 
-### Badges
+## Badges
 
 ```
 /badge/<size>/<rx>/<fg1>/<bg1>/<txt1>/<fg2>/<bg2>/<txt2>
@@ -38,7 +38,7 @@ https://tilde-yfho7.ondigitalocean.app
 | [![License](https://tilde-yfho7.ondigitalocean.app/badge/0/2.5/F8F8F2/44475A/License/F8F8F2/6272A4/MIT)](https://github.com/o0th/tilde) | `/badge/0/2.5/F8F8F2/44475A/0/2.5/License/F8F8F2/6272A4/MIT` |
 | [![License](https://tilde-yfho7.ondigitalocean.app/badge/1/0/F8F8F2/44475A/License/F8F8F2/6272A4/MIT)](https://github.com/o0th/tilde)   | `/badge/1/0/F8F8F2/44475A/1/0/License/F8F8F2/6272A4/MIT`     |
 
-### Version badges
+## Version badges
 
 Automatically retrieve version from package.json inside github repository
 
@@ -62,7 +62,7 @@ Automatically retrieve version from package.json inside github repository
 | [![Version](https://tilde-yfho7.ondigitalocean.app/badge/version/o0th/tilde/0/0/f8f8f2/ff79c6/f8f8f2/6272a4)](https://github.com/o0th/tilde) | `/badge/version/o0th/tilde/0/0/f8f8f2/ff79c6/f8f8f2/6272a4`  |
 
 
-### wakatime
+## Wakatime stats
 
 ```
 /wakatime/<username>/stats/<display>/<range>/<width-in-px>/<number-of-columns>
@@ -94,7 +94,7 @@ Sizing suggestions
 | Profile    | 854/3     | 419/2     | 282/1     |
 | Repository | 838/3     | 415/2     | 271/1     |
 
-### Contribute
+## Contribute
 
 `tilde` is an opensource project. If you want to say thank you
 and/or support the active development add a :star: to the project
