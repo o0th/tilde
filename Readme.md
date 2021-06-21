@@ -73,9 +73,9 @@ Automatically retrieve version from package.json inside github repository
 | `username`          | Wakatime username                     |
 | `display`           | Display `editors`, `languages`, `oss` |
 | `width-in-px`       | Width for the svg                     |
-| `number-of-columns` | Columns                               |
+| `number-of-columns` | Number of columns for item listing    |
 
-Examples
+### Examples
 
 ```markdown
 [![Editors](https://tilde-yfho7.ondigitalocean.app/wakatime/o0th/stats/languages/last_7_days/838/3)](https://github.com/o0th/tilde)
@@ -87,7 +87,7 @@ Examples
 [![Editors](https://tilde-yfho7.ondigitalocean.app/wakatime/o0th/stats/editors/last_7_days/415/2)](https://github.com/o0th/tilde)
 [![Editors](https://tilde-yfho7.ondigitalocean.app/wakatime/o0th/stats/oss/last_7_days/415/2)](https://github.com/o0th/tilde)
 
-Sizing suggestions
+### Sizing suggestions
 
 | Readme     | 1         | 1/2       | 1/3       |
 | ---------- | :-------: | :-------: | :-------: |
@@ -96,12 +96,10 @@ Sizing suggestions
 
 ## Contribute
 
-`tilde` is an opensource project. If you want to say thank you
-and/or support the active development add a :star: to the project
-or donate a :coffee:.
+If you want to say thank you and/or support the active development add a :star:
+to the project or donate a :coffee:.
 
 <a href="https://www.buymeacoffee.com/o0th">
   <img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=o0th&button_colour=FFDD00&font_colour=000000&font_family=Cookie&outline_colour=000000&coffee_colour=ffffff">
 </a>
-
 
