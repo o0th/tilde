@@ -13,7 +13,17 @@ variable "wakatime_secret" {
   sensitive = true
 }
 
-variable "github_secret" {
+variable "github_app_id" {
+  type      = string
+  sensitive = true
+}
+
+variable "github_client_id" {
+  type      = string
+  sensitive = true
+}
+
+variable "github_client_secret" {
   type      = string
   sensitive = true
 }

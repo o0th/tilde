@@ -16,9 +16,21 @@ resource "digitalocean_app" "tilde" {
     }
 
     env {
-      key   = "GITHUB_SECRET"
+      key   = "GITHUB_APP_ID"
       scope = "RUN_TIME"
-      value = var.github_secret
+      value = var.github_app_id
+    }
+
+    env {
+      key   = "GITHUB_CLIENT_ID"
+      scope = "RUN_TIME"
+      value = var.github_client_id
+    }
+
+    env {
+      key   = "GITHUB_CLIENT_SECRET"
+      scope = "RUN_TIME"
+      value = var.github_client_secret
     }
 
     env {
