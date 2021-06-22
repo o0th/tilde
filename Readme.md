@@ -45,12 +45,13 @@ https://tilde-yfho7.ondigitalocean.app
 Automatically retrieve version from package.json inside github repository
 
 ```
-/badge/version/<org>/<rep>/<size>/<rx>/<fg1>/<bg1>/<fg2>/<bg2>
+/badge/version/<prov>/<org>/<rep>/<size>/<rx>/<fg1>/<bg1>/<fg2>/<bg2>
 ```
 
 | Parameters | Descriptions                                                                          |
 | ---------- | ------------------------------------------------------------------------------------- |
-| `org`      | Github's organization or username                                                     |
+| `prov`     | One of `github`, `gitlab`                                                             |
+| `org`      | Github/Gitlab's organization or username                                              |
 | `repo`     | Repository name                                                                       |
 | `size`     | Badge size, `0` for small, `1` for large                                              |
 | `rx`       | [Radius on the x-axis](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/rx) |
@@ -61,9 +62,10 @@ Automatically retrieve version from package.json inside github repository
 
 ### Examples
 
-| Badges                                                                                                                                       | Codes                                                        |
-| -------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------ |
-| [![Version](https://tilde-yfho7.ondigitalocean.app/badge/version/o0th/tilde/0/0/f8f8f2/44475A/f8f8f2/ff79c6)](https://github.com/o0th/tilde) | `/badge/version/o0th/tilde/0/0/f8f8f2/44475a/f8f8f2/ff79c6`  |
+| Badges                                                                                                                                               | Codes                                                              |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------ |
+| [![Version](https://tilde-yfho7.ondigitalocean.app//badge/version/github/o0th/tilde/0/0/f8f8f2/44475A/f8f8f2/ff79c6)](https://github.com/o0th/tilde) | `/badge/version/github/o0th/tilde/0/0/f8f8f2/44475A/f8f8f2/ff79c6` |
+| [![Version](https://tilde-yfho7.ondigitalocean.app//badge/version/gitlab/o0th/tilde/0/0/f8f8f2/44475A/f8f8f2/ff79c6)](https://github.com/o0th/tilde) | `/badge/version/github/o0th/tilde/0/0/f8f8f2/44475A/f8f8f2/ff79c6` |
 
 
 ## Wakatime stats
@@ -94,10 +96,11 @@ Automatically retrieve version from package.json inside github repository
 
 ### Sizing suggestions
 
-| Readme     | 1         | 1/2       | 1/3       |
-| ---------- | :-------: | :-------: | :-------: |
-| Profile    | 854/3     | 419/2     | 282/1     |
-| Repository | 838/3     | 415/2     | 271/1     |
+| Readme            | 1         | 1/2       | 1/3       |
+| ----------------- | :-------: | :-------: | :-------: |
+| Github profile    | 854/3     | 419/2     | 282/1     |
+| Github repository | 838/3     | 415/2     | 271/1     |
+| Gitlab repository | 892/3     | 444/2     | 294/1     |
 
 ## Contribute
 
