@@ -2,7 +2,7 @@
 
 <p>
   <a href="https://github.com/o0th/tilde">
-    <img src="https://tilde-yfho7.ondigitalocean.app/badge/version/o0th/tilde/0/0/f8f8f2/44475a/f8f8f2/ff79c6" alt="Version">
+    <img src="https://tilde-yfho7.ondigitalocean.app/badge/version/github/o0th/tilde/0/0/f8f8f2/44475a/f8f8f2/ff79c6" alt="Version">
   </a>
   <a href="/LICENSE">
     <img src="https://tilde-yfho7.ondigitalocean.app/badge/0/0/F8F8F2/44475A/License/F8F8F2/6272A4/MIT" alt="License">
@@ -64,8 +64,8 @@ Automatically retrieve version from package.json inside github repository
 
 | Badges                                                                                                                                               | Codes                                                              |
 | ---------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------ |
-| [![Version](https://tilde-yfho7.ondigitalocean.app//badge/version/github/o0th/tilde/0/0/f8f8f2/44475A/f8f8f2/ff79c6)](https://github.com/o0th/tilde) | `/badge/version/github/o0th/tilde/0/0/f8f8f2/44475A/f8f8f2/ff79c6` |
-| [![Version](https://tilde-yfho7.ondigitalocean.app//badge/version/gitlab/o0th/tilde/0/0/f8f8f2/44475A/f8f8f2/ff79c6)](https://github.com/o0th/tilde) | `/badge/version/github/o0th/tilde/0/0/f8f8f2/44475A/f8f8f2/ff79c6` |
+| [![Version](https://tilde-yfho7.ondigitalocean.app/badge/version/github/o0th/tilde/0/0/f8f8f2/44475A/f8f8f2/ff79c6)](https://github.com/o0th/tilde) | `/badge/version/github/o0th/tilde/0/0/f8f8f2/44475A/f8f8f2/ff79c6` |
+| [![Version](https://tilde-yfho7.ondigitalocean.app/badge/version/gitlab/o0th/tilde/0/0/f8f8f2/44475A/f8f8f2/ff79c6)](https://github.com/o0th/tilde) | `/badge/version/gitlab/o0th/tilde/0/0/f8f8f2/44475A/f8f8f2/ff79c6` |
 
 
 ## Wakatime stats
