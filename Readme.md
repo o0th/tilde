@@ -97,9 +97,9 @@ Automatically retrieve version from package.json inside github repository
 
 # Gitlab
 
-[![Languages](https://tilde-yfho7.ondigitalocean.app/wakatime/o0th/stats/languages/last_7_days/295/1)](https://github/.com/o0th/tilde)
-[![Editors](https://tilde-yfho7.ondigitalocean.app/wakatime/o0th/stats/editors/last_7_days/295/1)](https://github.com/o0th/tilde)
-[![Operating Systems](https://tilde-yfho7.ondigitalocean.app/wakatime/o0th/stats/oss/last_7_days/295/1)](https://github.com/o0th/tilde)
+[![Languages](https://tilde-yfho7.ondigitalocean.app/wakatime/o0th/stats/languages/last_7_days/294/1)](https://github/.com/o0th/tilde)
+[![Editors](https://tilde-yfho7.ondigitalocean.app/wakatime/o0th/stats/editors/last_7_days/294/1)](https://github.com/o0th/tilde)
+[![Operating Systems](https://tilde-yfho7.ondigitalocean.app/wakatime/o0th/stats/oss/last_7_days/294/1)](https://github.com/o0th/tilde)
 
 
 ### Sizing suggestions
