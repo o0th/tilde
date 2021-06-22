@@ -97,9 +97,9 @@ Automatically retrieve version from package.json inside github repository
 
 # Gitlab
 
-[![Languages](https://tilde-yfho7.ondigitalocean.app/wakatime/o0th/stats/languages/last_7_days/894/3)](https://github.com/o0th/tilde)
-[![Editors](https://tilde-yfho7.ondigitalocean.app/wakatime/o0th/stats/editors/last_7_days/444/2)](https://github.com/o0th/tilde)
-[![Operating Systems](https://tilde-yfho7.ondigitalocean.app/wakatime/o0th/stats/oss/last_7_days/444/2)](https://github.com/o0th/tilde)
+[![Languages](https://tilde-yfho7.ondigitalocean.app/wakatime/o0th/stats/languages/last_7_days/298/1)](https://github/.com/o0th/tilde)
+[![Editors](https://tilde-yfho7.ondigitalocean.app/wakatime/o0th/stats/editors/last_7_days/298/1)](https://github.com/o0th/tilde)
+[![Operating Systems](https://tilde-yfho7.ondigitalocean.app/wakatime/o0th/stats/oss/last_7_days/298/1)](https://github.com/o0th/tilde)
 
 
 ### Sizing suggestions
@@ -108,7 +108,7 @@ Automatically retrieve version from package.json inside github repository
 | ----------------- | :-------: | :-------: | :-------: |
 | Github profile    | 854/3     | 419/2     | 282/1     |
 | Github repository | 838/3     | 415/2     | 271/1     |
-| Gitlab repository | | | |
+| Gitlab repository | 892/3     | 444/2     | |
 
 ## Contribute
 
