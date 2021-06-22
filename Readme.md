@@ -9,6 +9,26 @@
   </a>
 </p>
 
+Dinamic SVG generator for readmes
+
+## Usage
+
+Markdown
+
+```markdown
+[![<alt>](https://<endpoint>/<path>)](https://<link>)
+```
+
+Html
+
+```html
+<p>
+  <a href="https://<link>">
+    <img src="https://<endpoint>/<path>" alt="<alt>">
+  </a>
+</p>
+```
+
 ## Endpoint
 
 ```
@@ -42,7 +62,10 @@ https://tilde-yfho7.ondigitalocean.app
 
 ## Version badges
 
-Automatically retrieve version from package.json inside github repository
+Automatically retrieve version from package.json inside github/gitlab repository. For github repository
+it is necessary to authorize the app [o0th-tilde](https://github.com/apps/o0th-tilde).
+
+For gitlab repository at the moment it works only for public ones.
 
 ```
 /badge/version/<prov>/<org>/<rep>/<size>/<rx>/<fg1>/<bg1>/<fg2>/<bg2>
@@ -64,8 +87,8 @@ Automatically retrieve version from package.json inside github repository
 
 | Badges                                                                                                                                               | Codes                                                              |
 | ---------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------ |
-| [![Version](https://tilde-yfho7.ondigitalocean.app/badge/version/github/o0th/tilde/0/0/f8f8f2/44475A/f8f8f2/ff79c6)](https://github.com/o0th/tilde) | `/badge/version/github/o0th/tilde/0/0/f8f8f2/44475A/f8f8f2/ff79c6` |
-| [![Version](https://tilde-yfho7.ondigitalocean.app/badge/version/gitlab/o0th/tilde/0/0/f8f8f2/44475A/f8f8f2/ff79c6)](https://github.com/o0th/tilde) | `/badge/version/gitlab/o0th/tilde/0/0/f8f8f2/44475A/f8f8f2/ff79c6` |
+| [![Version](https://tilde-yfho7.ondigitalocean.app/badge/version/github/o0th/tilde/0/0/f8f8f2/44475A/f8f8f2/ff79c6)](https://github.com/o0th/tilde)  | `/badge/version/github/o0th/tilde/0/0/f8f8f2/44475A/f8f8f2/ff79c6` |
+| [![Version](https://tilde-yfho7.ondigitalocean.app/badge/version/gitlab/o0th/tilde/0/0/f8f8f2/44475A/f8f8f2/ff79c6)](https://github.com/o0th/tilde)  | `/badge/version/gitlab/o0th/tilde/0/0/f8f8f2/44475A/f8f8f2/ff79c6` |
 
 
 ## Wakatime stats

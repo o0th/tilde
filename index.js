@@ -8,7 +8,7 @@ const badge = require('./lib/routes/badge')
 const app = new Koa()
 
 app.use((ctx, next) => {
-  process.stdout.write(`${ctx.origin} ${ctx.url}\n`)
+  process.stdout.write(`${ctx.url}\n`)
   return next()
 })
 

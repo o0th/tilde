@@ -3,24 +3,36 @@ resource "digitalocean_app" "tilde" {
     name   = "tilde"
     region = "fra"
 
+    env {
+      key   = "WAKATIME_KEY"
+      scope = "RUN_TIME"
+      value = var.wakatime_key
+    }
+
+    env {
+      key   = "WAKATIME_SECRET"
+      scope = "RUN_TIME"
+      value = var.wakatime_secret
+    }
+
+    env {
+      key   = "GITHUB_SECRET"
+      scope = "RUN_TIME"
+      value = var.github_secret
+    }
+
+    env {
+      key   = "GITHUB_PEM"
+      scope = "RUN_TIME"
+      value = var.github_pem
+    }
+
     service {
       name               = "tilde"
       environment_slug   = "node-js"
       instance_size_slug = "basic-xxs"
       run_command        = "npm start"
       http_port          = 3000
-
-      env {
-        key   = "WAKATIME_KEY"
-        scope = "RUN_TIME"
-        value = "$${tilde.WAKATIME_KEY}"
-      }
-
-      env {
-        key   = "WAKATIME_SECRET"
-        scope = "RUN_TIME"
-        value = "$${tilde.WAKATIME_SECRET}"
-      }
 
       github {
         repo           = "o0th/tilde"
@@ -38,3 +50,4 @@ resource "digitalocean_app" "tilde" {
     }
   }
 }
+
