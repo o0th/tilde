@@ -1,6 +1,6 @@
 {
   "name": "tilde",
-  "version": "0.6.0",
+  "version": "0.7.0",
   "description": "svg for github readme",
   "main": "index.js",
   "scripts": {
@@ -29,12 +29,16 @@
   "dependencies": {
     "@koa/router": "^10.0.0",
     "@octokit/auth-app": "^3.5.0",
+    "@svgdotjs/svg.filter.js": "^3.0.7",
+    "@svgdotjs/svg.js": "^3.1.0",
     "axios": "^0.21.1",
     "d3-node": "^2.2.2",
     "dotenv": "^10.0.0",
     "jsonwebtoken": "^8.5.1",
     "koa": "^2.13.1",
-    "koa-static": "^5.0.0"
+    "koa-static": "^5.0.0",
+    "simple-icons": "^5.3.0",
+    "svgdom": "^0.1.8"
   },
   "engines": {
     "node": ">=16"

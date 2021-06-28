@@ -2,7 +2,7 @@
 
 <p>
   <a href="https://github.com/o0th/tilde">
-    <img src="https://tilde-yfho7.ondigitalocean.app/badge/version/github/o0th/tilde/0/0/f8f8f2/44475a/f8f8f2/ff79c6" alt="Version">
+    <img src="https://tilde-yfho7.ondigitalocean.app/badge/version/github/o0th/tilde/0/0/f8f8f2/44475a/Version/f8f8f2/ff79c6" alt="Version">
   </a>
   <a href="/LICENSE">
     <img src="https://tilde-yfho7.ondigitalocean.app/badge/0/0/F8F8F2/44475A/License/F8F8F2/6272A4/MIT" alt="License">
@@ -62,13 +62,15 @@ https://tilde-yfho7.ondigitalocean.app
 
 ## Version badges
 
-Automatically retrieve version from package.json inside github/gitlab repository. For github repository
-it is necessary to authorize the app [o0th-tilde](https://github.com/apps/o0th-tilde).
+[![Autorize-github](https://tilde-yfho7.ondigitalocean.app/badge/0/0/F8F8F2/44475A/Github/F8F8F2/6272A4/Authorize)](https://github.com/apps/o0th-tilde)
 
-For gitlab repository at the moment it works only for public ones.
+Automatically retrieve version from package.json inside github/gitlab repository. For github repository
+it is necessary to authorize the app following the link above.
+
+For gitlab repository at the moment it works only for public ones. A gitlab app is under development.
 
 ```
-/badge/version/<prov>/<org>/<rep>/<size>/<rx>/<fg1>/<bg1>/<fg2>/<bg2>
+/badge/version/<prov>/<org>/<rep>/<size>/<rx>/<fg1>/<bg1>/<txt>/<fg2>/<bg2>
 ```
 
 | Parameters | Descriptions                                                                          |
@@ -80,15 +82,16 @@ For gitlab repository at the moment it works only for public ones.
 | `rx`       | [Radius on the x-axis](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/rx) |
 | `fg1`      | Foreground for the badge's left side in hex                                           |
 | `bg1`      | Background for the badge's left side in hex                                           |
+| `txt`      | Text for the badge left side                                                          |
 | `fg2`      | Foreground for the badge's right side in hex                                          |
 | `bg2`      | Background for the badge's right side in hex                                          |
 
 ### Examples
 
-| Badges                                                                                                                                               | Codes                                                              |
-| ---------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------ |
-| [![Version](https://tilde-yfho7.ondigitalocean.app/badge/version/github/o0th/tilde/0/0/f8f8f2/44475A/f8f8f2/ff79c6)](https://github.com/o0th/tilde)  | `/badge/version/github/o0th/tilde/0/0/f8f8f2/44475A/f8f8f2/ff79c6` |
-| [![Version](https://tilde-yfho7.ondigitalocean.app/badge/version/gitlab/o0th/tilde/0/0/f8f8f2/44475A/f8f8f2/ff79c6)](https://github.com/o0th/tilde)  | `/badge/version/gitlab/o0th/tilde/0/0/f8f8f2/44475A/f8f8f2/ff79c6` |
+| Badges                                                                                                                                                       | Codes                                                                      |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------- |
+| [![Version](https://tilde-yfho7.ondigitalocean.app/badge/version/github/o0th/tilde/0/0/f8f8f2/44475A/Version/f8f8f2/ff79c6)](https://github.com/o0th/tilde)  | `/badge/version/github/o0th/tilde/0/0/f8f8f2/44475A/Version/f8f8f2/ff79c6` |
+| [![Version](https://tilde-yfho7.ondigitalocean.app/badge/version/gitlab/o0th/tilde/0/0/f8f8f2/44475A/Version/f8f8f2/ff79c6)](https://github.com/o0th/tilde)  | `/badge/version/gitlab/o0th/tilde/0/0/f8f8f2/44475A/Version/f8f8f2/ff79c6` |
 
 
 ## Wakatime stats
