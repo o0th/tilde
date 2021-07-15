@@ -31,3 +31,8 @@ variable "github_pem" {
   type      = string
   sensitive = true
 }
+
+variable "image" {
+  type = string
+}
+

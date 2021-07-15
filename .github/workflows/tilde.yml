@@ -1,9 +1,6 @@
 name: tilde
 
 on:
-  push:
-    branches:
-      - k8s
   release:
     types:
       - created
