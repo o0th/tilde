@@ -14,5 +14,13 @@ node_modules
 # terraform
 #
 
-.terraform
+*terraform*
+*.tfvars
+
+#
+# secrets
+#
+
+infra/secrets/*
+!infra/secrets/*.age
 

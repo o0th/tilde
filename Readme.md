@@ -2,10 +2,10 @@
 
 <p>
   <a href="https://github.com/o0th/tilde">
-    <img src="https://tilde-yfho7.ondigitalocean.app/badge/version/github/o0th/tilde/0/0/f8f8f2/44475a/Version/f8f8f2/ff79c6" alt="Version">
+    <img src="https://tilde.o0th.io/badge/version/github/o0th/tilde/0/0/f8f8f2/44475a/Version/f8f8f2/ff79c6" alt="Version">
   </a>
   <a href="/LICENSE">
-    <img src="https://tilde-yfho7.ondigitalocean.app/badge/0/0/F8F8F2/44475A/License/F8F8F2/6272A4/MIT" alt="License">
+    <img src="https://tilde.o0th.io/badge/0/0/F8F8F2/44475A/License/F8F8F2/6272A4/MIT" alt="License">
   </a>
 </p>
 
@@ -32,7 +32,7 @@ Html
 ## Endpoint
 
 ```
-https://tilde-yfho7.ondigitalocean.app
+https://tilde.o0th.io
 ```
 
 ## Badges
@@ -54,15 +54,15 @@ https://tilde-yfho7.ondigitalocean.app
 
 ### Examples
 
-| Badges                                                                                                                                  | Codes                                                        |
-| --------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------ |
-| [![License](https://tilde-yfho7.ondigitalocean.app/badge/0/0/F8F8F2/44475A/License/F8F8F2/6272A4/MIT)](https://github.com/o0th/tilde)   | `/badge/0/0/F8F8F2/44475A/License/F8F8F2/6272A4/MIT`         |
-| [![License](https://tilde-yfho7.ondigitalocean.app/badge/0/2.5/F8F8F2/44475A/License/F8F8F2/6272A4/MIT)](https://github.com/o0th/tilde) | `/badge/0/2.5/F8F8F2/44475A/0/2.5/License/F8F8F2/6272A4/MIT` |
-| [![License](https://tilde-yfho7.ondigitalocean.app/badge/1/0/F8F8F2/44475A/License/F8F8F2/6272A4/MIT)](https://github.com/o0th/tilde)   | `/badge/1/0/F8F8F2/44475A/1/0/License/F8F8F2/6272A4/MIT`     |
+| Badges                                                                                                                 | Codes                                                        |
+| ---------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------ |
+| [![License](https://tilde.o0th.io/badge/0/0/F8F8F2/44475A/License/F8F8F2/6272A4/MIT)](https://github.com/o0th/tilde)   | `/badge/0/0/F8F8F2/44475A/License/F8F8F2/6272A4/MIT`         |
+| [![License](https://tilde.o0th.io/badge/0/2.5/F8F8F2/44475A/License/F8F8F2/6272A4/MIT)](https://github.com/o0th/tilde) | `/badge/0/2.5/F8F8F2/44475A/0/2.5/License/F8F8F2/6272A4/MIT` |
+| [![License](https://tilde.o0th.io/badge/1/0/F8F8F2/44475A/License/F8F8F2/6272A4/MIT)](https://github.com/o0th/tilde)   | `/badge/1/0/F8F8F2/44475A/1/0/License/F8F8F2/6272A4/MIT`     |
 
 ## Version badges
 
-[![Autorize-github](https://tilde-yfho7.ondigitalocean.app/badge/0/0/F8F8F2/44475A/Github/F8F8F2/6272A4/Authorize)](https://github.com/apps/o0th-tilde)
+[![Autorize-github](https://tilde.o0th.io/badge/0/0/F8F8F2/44475A/Github/F8F8F2/6272A4/Authorize)](https://github.com/apps/o0th-tilde)
 
 Automatically retrieve version from package.json inside github/gitlab repository. For github repository
 it is necessary to authorize the app following the link above.
@@ -88,10 +88,10 @@ For gitlab repository at the moment it works only for public ones. A gitlab app 
 
 ### Examples
 
-| Badges                                                                                                                                                       | Codes                                                                      |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------- |
-| [![Version](https://tilde-yfho7.ondigitalocean.app/badge/version/github/o0th/tilde/0/0/f8f8f2/44475A/Version/f8f8f2/ff79c6)](https://github.com/o0th/tilde)  | `/badge/version/github/o0th/tilde/0/0/f8f8f2/44475A/Version/f8f8f2/ff79c6` |
-| [![Version](https://tilde-yfho7.ondigitalocean.app/badge/version/gitlab/o0th/tilde/0/0/f8f8f2/44475A/Version/f8f8f2/ff79c6)](https://github.com/o0th/tilde)  | `/badge/version/gitlab/o0th/tilde/0/0/f8f8f2/44475A/Version/f8f8f2/ff79c6` |
+| Badges                                                                                                                                      | Codes                                                                      |
+| ------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------- |
+| [![Version](https://tilde.o0th.io/badge/version/github/o0th/tilde/0/0/f8f8f2/44475A/Version/f8f8f2/ff79c6)](https://github.com/o0th/tilde)  | `/badge/version/github/o0th/tilde/0/0/f8f8f2/44475A/Version/f8f8f2/ff79c6` |
+| [![Version](https://tilde.o0th.io/badge/version/gitlab/o0th/tilde/0/0/f8f8f2/44475A/Version/f8f8f2/ff79c6)](https://github.com/o0th/tilde)  | `/badge/version/gitlab/o0th/tilde/0/0/f8f8f2/44475A/Version/f8f8f2/ff79c6` |
 
 
 ## Wakatime stats
@@ -111,14 +111,14 @@ For gitlab repository at the moment it works only for public ones. A gitlab app 
 ### Examples
 
 ```markdown
-[![Languages](https://tilde-yfho7.ondigitalocean.app/wakatime/o0th/stats/languages/last_7_days/838/3)](https://github.com/o0th/tilde)
-[![Editors](https://tilde-yfho7.ondigitalocean.app/wakatime/o0th/stats/editors/last_7_days/415/2)](https://github.com/o0th/tilde)
-[![Operating Systems](https://tilde-yfho7.ondigitalocean.app/wakatime/o0th/stats/oss/last_7_days/415/2)](https://github.com/o0th/tilde)
+[![Languages](https://tilde.o0th.io/wakatime/o0th/stats/languages/last_7_days/838/3)](https://github.com/o0th/tilde)
+[![Editors](https://tilde.o0th.io/wakatime/o0th/stats/editors/last_7_days/415/2)](https://github.com/o0th/tilde)
+[![Operating Systems](https://tilde.o0th.io/wakatime/o0th/stats/oss/last_7_days/415/2)](https://github.com/o0th/tilde)
 ```
 
-[![Languages](https://tilde-yfho7.ondigitalocean.app/wakatime/o0th/stats/languages/last_7_days/838/3)](https://github.com/o0th/tilde)
-[![Editors](https://tilde-yfho7.ondigitalocean.app/wakatime/o0th/stats/editors/last_7_days/415/2)](https://github.com/o0th/tilde)
-[![Operating Systems](https://tilde-yfho7.ondigitalocean.app/wakatime/o0th/stats/oss/last_7_days/415/2)](https://github.com/o0th/tilde)
+[![Languages](https://tilde.o0th.io/wakatime/o0th/stats/languages/last_7_days/838/3)](https://github.com/o0th/tilde)
+[![Editors](https://tilde.o0th.io/wakatime/o0th/stats/editors/last_7_days/415/2)](https://github.com/o0th/tilde)
+[![Operating Systems](https://tilde.o0th.io/wakatime/o0th/stats/oss/last_7_days/415/2)](https://github.com/o0th/tilde)
 
 ### Sizing suggestions
 
