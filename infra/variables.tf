@@ -1,6 +1,5 @@
-variable "digitalocean_token" {
-  type      = string
-  sensitive = true
+variable "service_port" {
+  type = number
 }
 
 variable "wakatime_key" {

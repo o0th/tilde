@@ -18,4 +18,4 @@ app.use(wakatime.allowedMethods())
 app.use(badge.routes())
 app.use(badge.allowedMethods())
 
-app.listen(3000)
+app.listen(process.env.SERVICE_PORT)
